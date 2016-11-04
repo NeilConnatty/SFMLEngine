@@ -9,6 +9,7 @@
 #include <map>
 #include <assert.h>
 
+/// template class definition ///
 template <typename resource, typename identifier>
 class resource_holder
 {
@@ -23,6 +24,7 @@ private:
     std::map<identifier, std::unique_ptr<resource>> _resource_map;
 };
 
+/// template function definitions ///
 template <typename resource, typename identifier>
 void resource_holder<resource, identifier>::load (identifier id, const std::string &filename)
 {
