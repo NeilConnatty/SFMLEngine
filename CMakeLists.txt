@@ -7,9 +7,14 @@ set(CMAKE_MODULE_PATH  ${CMAKE_SOURCE_DIR}/cmake/modules)
 find_package(SFML 2.4 COMPONENTS graphics window system)
 
 include_directories(${SFML_INCLUDE_DIR})
-include_directories( ${SFGUI_INCLUDE_DIR} )
 include_directories(headers)
 
-set(SOURCE_FILES main.cpp src/Game.cpp src/texture_holder.cpp src/entity.cpp src/aircraft.cpp)
+set(SOURCE_FILES
+        main.cpp
+        src/Game.cpp
+        src/entity.cpp
+        src/aircraft.cpp
+        src/scene_node.cpp
+        )
 add_executable(SFMLEngine ${SOURCE_FILES})
 target_link_libraries(SFMLEngine ${SFML_LIBRARIES})
