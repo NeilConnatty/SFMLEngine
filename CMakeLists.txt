@@ -15,6 +15,8 @@ set(SOURCE_FILES
         src/entity.cpp
         src/aircraft.cpp
         src/scene_node.cpp
+        src/sprite_node.cpp
+        src/world.cpp
         )
 add_executable(SFMLEngine ${SOURCE_FILES})
 target_link_libraries(SFMLEngine ${SFML_LIBRARIES})

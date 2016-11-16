@@ -14,6 +14,7 @@ namespace textures
     {
         EAGLE,
         RAPTOR,
+        DESERT,
     };
 
     typedef resource_holder<sf::Texture, textures::ID> texture_holder;

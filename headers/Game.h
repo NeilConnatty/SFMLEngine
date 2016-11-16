@@ -23,6 +23,7 @@ private:
 
 private:
     static sf::Time TIME_PER_FRAME;
+    sf::View _worldView;
     sf::RenderWindow _window;
     sf::Sprite _player;
     sf::Texture _texture;

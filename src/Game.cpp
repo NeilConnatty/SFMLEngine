@@ -9,7 +9,7 @@ sf::Time Game::TIME_PER_FRAME = sf::seconds(1.f/60.f);
 Game::Game () : _window(sf::VideoMode(640, 480), "SFML Application"), _player()
 {
     std::string path(PATH_TO_PROJECT_ROOT);
-    path.append("assets/eagle.png");
+    path.append("assets/textures/eagle.png");
     if (!_texture.loadFromFile(path)) {
         // handle texture load error
     }
@@ -72,6 +72,9 @@ void Game::update (sf::Time deltaTime)
     if (_isMovingRight) movement.x += PLAYER_SPEED;
 
     _player.move(movement * deltaTime.asSeconds());
+    _player.move(0.f, SCROLL_SPEED * deltaTime.asSeconds());
+
+    _worldView.move(0.f, SCROLL_SPEED * deltaTime.asSeconds());
 }
 
 void Game::render ()
