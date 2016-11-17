@@ -6,16 +6,16 @@
 
 sf::Time Game::TIME_PER_FRAME = sf::seconds(1.f/60.f);
 
-Game::Game () : _window(sf::VideoMode(640, 480), "SFML Application"), _player()
+Game::Game () :
+        _window(sf::VideoMode(640, 480), "SFML Application"),
+        _world(_window),
+        _statisticsNumFrames(0)
 {
     std::string path(PATH_TO_PROJECT_ROOT);
-    path.append("assets/textures/eagle.png");
-    if (!_texture.loadFromFile(path)) {
-        // handle texture load error
-    }
-    _player.setTexture(_texture);
-    _player.setPosition(100.f, 100.f);
-    _isMovingDown= false; _isMovingUp = false; _isMovingLeft = false; _isMovingRight = false;
+    _font.loadFromFile(path.append("assets/Sansation.ttf"));
+    _statisticsText.setFont(_font);
+    _statisticsText.setPosition(5.f, 5.f);
+    _statisticsText.setCharacterSize(10);
 }
 
 void Game::run ()
@@ -25,13 +25,16 @@ void Game::run ()
     while (_window.isOpen())
     {
         process_events();
-        timeSinceLastUpdate += clock.restart();
+        sf::Time elapsedTime = clock.restart();
+        timeSinceLastUpdate += elapsedTime;
         while (timeSinceLastUpdate > TIME_PER_FRAME)
         {
             timeSinceLastUpdate -= TIME_PER_FRAME;
             process_events();
             update(TIME_PER_FRAME);
         }
+
+        update_statistics(elapsedTime);
         render();
     }
 }
@@ -55,31 +58,37 @@ void Game::process_events ()
     }
 }
 
+void Game::update_statistics(sf::Time deltaTime)
+{
+    _statisticsTimeUpdate += deltaTime;
+    _statisticsNumFrames += 1;
+
+    if (_statisticsTimeUpdate >= sf::seconds(1.f))
+    {
+        _statisticsText.setString(
+                "Frames / Second = " + std::to_string(_statisticsNumFrames) + "\n" +
+                "Time / Update = " + std::to_string(_statisticsTimeUpdate.asMicroseconds() / _statisticsNumFrames) + "us"
+        );
+        _statisticsTimeUpdate -= sf::seconds(1.f);
+        _statisticsNumFrames = 0;
+    }
+}
+
 void Game::handle_player_input (sf::Keyboard::Key key, bool isPressed)
 {
-    if (key == sf::Keyboard::W) _isMovingUp = isPressed;
-    if (key == sf::Keyboard::S) _isMovingDown = isPressed;
-    if (key == sf::Keyboard::A) _isMovingLeft = isPressed;
-    if (key == sf::Keyboard::D) _isMovingRight = isPressed;
 }
 
 void Game::update (sf::Time deltaTime)
 {
-    sf::Vector2f movement(0.f, 0.f);
-    if (_isMovingUp) movement.y -= PLAYER_SPEED;
-    if (_isMovingDown) movement.y += PLAYER_SPEED;
-    if (_isMovingLeft) movement.x -= PLAYER_SPEED;
-    if (_isMovingRight) movement.x += PLAYER_SPEED;
-
-    _player.move(movement * deltaTime.asSeconds());
-    _player.move(0.f, SCROLL_SPEED * deltaTime.asSeconds());
-
-    _worldView.move(0.f, SCROLL_SPEED * deltaTime.asSeconds());
+    _world.update(deltaTime);
 }
 
 void Game::render ()
 {
     _window.clear();
-    _window.draw(_player);
+    _world.draw();
+
+    _window.setView(_window.getDefaultView());
+    _window.draw(_statisticsText);
     _window.display();
 }

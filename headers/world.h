@@ -11,6 +11,7 @@
 
 #include "textures.h"
 #include "scene_node.h"
+#include "aircraft.h"
 
 #define SCROLL_SPEED -50.0f
 #define WORLD_SIZE 2000.f
@@ -37,7 +38,7 @@ private:
 private:
     sf::RenderWindow&                       _window;
     sf::View                                _worldView;
-    texture_holder                          _textures;
+    textures::texture_holder                _textures;
     scene_node                              _sceneGraph;
     std::array<scene_node*, LAYER_COUNT>    _sceneLayers;
 
