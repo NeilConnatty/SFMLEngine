@@ -21,6 +21,9 @@ public:
     const resource& get (identifier id) const;
 
 private:
+    void insert_resource (identifier id, std::unique_ptr<resource> res);
+
+private:
     std::map<identifier, std::unique_ptr<resource>> _resource_map;
 };
 
@@ -28,24 +31,22 @@ private:
 template <typename resource, typename identifier>
 void resource_holder<resource, identifier>::load (identifier id, const std::string &filename)
 {
-    std::unique_ptr<resource> _resource(new resource());
-    if (!_resource->loadFromFile(filename))
+    std::unique_ptr<resource> res(new resource());
+    if (!res->loadFromFile(filename))
         throw std::runtime_error("resource_holder::load - failed to load " + filename);
 
-    auto inserted = _resource_map.insert(std::make_pair(id, std::move(_resource)));
-    assert(inserted.second);
+    insert_resource(id, std::move(res));
 }
 
 template <typename resource, typename identifier>
 template <typename parameter>
 void resource_holder<resource, identifier>::load (identifier id, const std::string &filename, const parameter &second_param)
 {
-    std::unique_ptr<resource> _resource(new resource());
-    if (!_resource->loadFromFile(filename, second_param))
+    std::unique_ptr<resource> res(new resource());
+    if (!res->loadFromFile(filename, second_param))
         throw std::runtime_error("resource_holder::load - failed to load " + filename);
 
-    auto inserted = _resource_map.insert(std::make_pair(id, std::move(_resource)));
-    assert(inserted.second);
+    insert_resource(id, std::move(res));
 }
 
 template <typename resource, typename identifier>
@@ -64,6 +65,13 @@ const resource& resource_holder<resource, identifier>::get (identifier id) const
     assert(found != _resource_map.end());
 
     return *found->second;
+}
+
+template <typename resource, typename identifier>
+void resource_holder<resource, identifier>::insert_resource (identifier id, std::unique_ptr<resource> res)
+{
+    auto inserted = _resource_map.insert(std::make_pair(id, std::move(res)));
+    assert(inserted.second);
 }
 
 #endif //SFMLENGINE_RESOURCE_HOLDER_H

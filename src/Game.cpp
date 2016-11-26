@@ -8,8 +8,11 @@ sf::Time Game::TIME_PER_FRAME = sf::seconds(1.f/60.f);
 
 Game::Game () :
         _window(sf::VideoMode(640, 480), "SFML Application"),
-        _world(_window),
-        _statisticsNumFrames(0)
+        _font(),
+        _statisticsText(),
+        _statisticsTimeUpdate(),
+        _statisticsNumFrames(0),
+        _world(_window)
 {
     std::string path(PATH_TO_PROJECT_ROOT);
     _font.loadFromFile(path.append("assets/Sansation.ttf"));
@@ -24,7 +27,6 @@ void Game::run ()
     sf::Time timeSinceLastUpdate = sf::Time::Zero;
     while (_window.isOpen())
     {
-        process_events();
         sf::Time elapsedTime = clock.restart();
         timeSinceLastUpdate += elapsedTime;
         while (timeSinceLastUpdate > TIME_PER_FRAME)

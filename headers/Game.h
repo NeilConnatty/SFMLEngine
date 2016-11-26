@@ -7,8 +7,7 @@
 #include <SFML/Graphics.hpp>
 #include "world.h"
 
-#define PLAYER_SPEED 100.f
-#define PATH_TO_PROJECT_ROOT "../../"
+#define PATH_TO_PROJECT_ROOT "../"
 
 class Game
 {

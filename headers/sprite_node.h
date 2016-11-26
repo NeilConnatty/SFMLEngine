@@ -7,6 +7,7 @@
 
 
 #include "scene_node.h"
+#include <SFML/Graphics/Sprite.hpp>
 
 class sprite_node : public scene_node
 {
@@ -15,7 +16,7 @@ public:
     sprite_node (const sf::Texture& texture, const sf::IntRect& rect);
 
 private:
-    virtual void drawCurrent (sf::RenderTarget& target, sf::RenderStates states) const;
+    virtual void draw_current (sf::RenderTarget& target, sf::RenderStates states) const;
 
 private:
     sf::Sprite _sprite;

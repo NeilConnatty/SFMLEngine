@@ -14,7 +14,7 @@ sprite_node::sprite_node (const sf::Texture &texture, const sf::IntRect& rect) :
 {
 }
 
-void sprite_node::drawCurrent (sf::RenderTarget &target, sf::RenderStates states) const
+void sprite_node::draw_current (sf::RenderTarget &target, sf::RenderStates states) const
 {
     target.draw(_sprite, states);
 }

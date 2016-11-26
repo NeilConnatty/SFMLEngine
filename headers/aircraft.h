@@ -18,7 +18,7 @@ public:
     };
 
 public:
-    explicit aircraft (aircraft::type m_type, const textures::texture_holder &textures);
+    explicit aircraft (aircraft::type m_type, const texture_holder &textures);
     virtual void draw_current (sf::RenderTarget &target, sf::RenderStates states) const;
 
 private:

@@ -7,15 +7,20 @@
 
 
 #include <SFML/System/NonCopyable.hpp>
+#include <SFML/Graphics/View.hpp>
+#include <SFML/Graphics/Texture.hpp>
+
 #include <array>
 
 #include "textures.h"
 #include "scene_node.h"
+#include "sprite_node.h"
 #include "aircraft.h"
+#include "resource_holder.h"
 
 #define SCROLL_SPEED -50.0f
 #define WORLD_SIZE 2000.f
-#define PATH_TO_PROJECT_ROOT "../../"
+#define PATH_TO_PROJECT_ROOT "../"
 
 class world : private sf::NonCopyable
 {
@@ -38,7 +43,7 @@ private:
 private:
     sf::RenderWindow&                       _window;
     sf::View                                _worldView;
-    textures::texture_holder                _textures;
+    texture_holder                          _textures;
     scene_node                              _sceneGraph;
     std::array<scene_node*, LAYER_COUNT>    _sceneLayers;
 

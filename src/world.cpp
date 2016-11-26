@@ -46,7 +46,7 @@ void world::build_scene ()
     sf::IntRect desertRect(_worldBounds);
     desert.setRepeated(true);
 
-    scene_node::ptr backgroundSprite(new sprite_node(desert, desertRect));
+    std::unique_ptr<sprite_node> backgroundSprite(new sprite_node(desert, desertRect));
     backgroundSprite->setPosition(_worldBounds.left, _worldBounds.top);
     _sceneLayers[BACKGROUND]->attach_child(std::move(backgroundSprite));
 
@@ -59,6 +59,7 @@ void world::build_scene ()
     scene_node::ptr leftEscort(new aircraft(aircraft::RAPTOR, _textures));
     leftEscort->setPosition(-80.f, 50.f);
     _playerAircraft->attach_child(std::move(leftEscort));
+
     scene_node::ptr rightEscort(new aircraft(aircraft::RAPTOR, _textures));
     rightEscort->setPosition(80.f, 50.f);
     _playerAircraft->attach_child(std::move(rightEscort));

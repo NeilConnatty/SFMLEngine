@@ -6,9 +6,10 @@
 #include <assert.h>
 #include "scene_node.h"
 
-scene_node::scene_node ()
+scene_node::scene_node () :
+    _children(),
+    _parent(nullptr)
 {
-    _parent = nullptr;
 }
 
 void scene_node::attach_child (scene_node::ptr child)

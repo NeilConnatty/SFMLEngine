@@ -8,6 +8,11 @@
 #include <SFML/Graphics.hpp>
 #include "resource_holder.h"
 
+namespace sf
+{
+    class Texture;
+}
+
 namespace textures
 {
     enum ID
@@ -16,8 +21,11 @@ namespace textures
         RAPTOR,
         DESERT,
     };
-
-    typedef resource_holder<sf::Texture, textures::ID> texture_holder;
 }
+
+template <typename resource, typename identifier>
+class resource_holder;
+
+typedef resource_holder<sf::Texture, textures::ID> texture_holder;
 
 #endif //SFMLENGINE_TEXTURES_H
