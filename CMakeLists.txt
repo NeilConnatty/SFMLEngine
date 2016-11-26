@@ -17,6 +17,8 @@ set(SOURCE_FILES
         src/scene_node.cpp
         src/sprite_node.cpp
         src/world.cpp
-        )
+        src/command.cpp
+        src/command_queue.cpp
+        src/player.cpp)
 add_executable(SFMLEngine ${SOURCE_FILES})
 target_link_libraries(SFMLEngine ${SFML_LIBRARIES})

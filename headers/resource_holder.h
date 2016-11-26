@@ -24,7 +24,7 @@ private:
     void insert_resource (identifier id, std::unique_ptr<resource> res);
 
 private:
-    std::map<identifier, std::unique_ptr<resource>> _resource_map;
+    std::map<identifier, std::unique_ptr<resource>> m_resource_map;
 };
 
 /// template function definitions ///
@@ -52,8 +52,8 @@ void resource_holder<resource, identifier>::load (identifier id, const std::stri
 template <typename resource, typename identifier>
 resource& resource_holder<resource, identifier>::get (identifier id)
 {
-    auto found = _resource_map.find(id);
-    assert(found != _resource_map.end());
+    auto found = m_resource_map.find(id);
+    assert(found != m_resource_map.end());
 
     return *found->second;
 }
@@ -61,8 +61,8 @@ resource& resource_holder<resource, identifier>::get (identifier id)
 template <typename resource, typename identifier>
 const resource& resource_holder<resource, identifier>::get (identifier id) const
 {
-    auto found = _resource_map.find(id);
-    assert(found != _resource_map.end());
+    auto found = m_resource_map.find(id);
+    assert(found != m_resource_map.end());
 
     return *found->second;
 }
@@ -70,7 +70,7 @@ const resource& resource_holder<resource, identifier>::get (identifier id) const
 template <typename resource, typename identifier>
 void resource_holder<resource, identifier>::insert_resource (identifier id, std::unique_ptr<resource> res)
 {
-    auto inserted = _resource_map.insert(std::make_pair(id, std::move(res)));
+    auto inserted = m_resource_map.insert(std::make_pair(id, std::move(res)));
     assert(inserted.second);
 }
 

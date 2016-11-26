@@ -5,16 +5,16 @@
 #include "sprite_node.h"
 
 sprite_node::sprite_node (const sf::Texture &texture) :
-        _sprite(texture)
+        m_sprite(texture)
 {
 }
 
 sprite_node::sprite_node (const sf::Texture &texture, const sf::IntRect& rect) :
-        _sprite(texture, rect)
+        m_sprite(texture, rect)
 {
 }
 
 void sprite_node::draw_current (sf::RenderTarget &target, sf::RenderStates states) const
 {
-    target.draw(_sprite, states);
+    target.draw(m_sprite, states);
 }

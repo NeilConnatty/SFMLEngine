@@ -17,6 +17,7 @@
 #include "sprite_node.h"
 #include "aircraft.h"
 #include "resource_holder.h"
+#include "command_queue.h"
 
 #define SCROLL_SPEED -50.0f
 #define WORLD_SIZE 2000.f
@@ -28,6 +29,7 @@ public:
     explicit world (sf::RenderWindow& window);
     void update (sf::Time deltaTime);
     void draw ();
+    command_queue& get_command_queue ();
 
 private:
     void load_textures ();
@@ -41,16 +43,17 @@ private:
     };
 
 private:
-    sf::RenderWindow&                       _window;
-    sf::View                                _worldView;
-    texture_holder                          _textures;
-    scene_node                              _sceneGraph;
-    std::array<scene_node*, LAYER_COUNT>    _sceneLayers;
+    sf::RenderWindow&                       m_window;
+    sf::View                                m_worldView;
+    texture_holder                          m_textures;
+    scene_node                              m_sceneGraph;
+    std::array<scene_node*, LAYER_COUNT>    m_sceneLayers;
+    command_queue                           m_queue;
 
-    sf::FloatRect                           _worldBounds;
-    sf::Vector2f                            _spawnPosition;
-    float                                   _scrollSpeed;
-    aircraft*                               _playerAircraft;
+    sf::FloatRect                           m_worldBounds;
+    sf::Vector2f                            m_spawnPosition;
+    float                                   m_scrollSpeed;
+    aircraft*                               m_playerAircraft;
 };
 
 

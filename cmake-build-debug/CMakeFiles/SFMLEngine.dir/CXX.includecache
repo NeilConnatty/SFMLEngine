@@ -11,6 +11,8 @@ SFML/Graphics.hpp
 -
 world.h
 ../headers/world.h
+player.h
+../headers/player.h
 
 ../headers/aircraft.h
 entity.h
@@ -19,12 +21,36 @@ SFML/Graphics.hpp
 -
 textures.h
 ../headers/textures.h
+category.h
+../headers/category.h
+
+../headers/category.h
+
+../headers/command.h
+SFML/System/Time.hpp
+-
+category.h
+../headers/category.h
+scene_node.h
+../headers/scene_node.h
+
+../headers/command_queue.h
+queue
+-
+command.h
+../headers/command.h
 
 ../headers/entity.h
 SFML/System.hpp
 -
 scene_node.h
 ../headers/scene_node.h
+
+../headers/player.h
+command_queue.h
+../headers/command_queue.h
+command.h
+../headers/command.h
 
 ../headers/resource_holder.h
 string
@@ -39,6 +65,10 @@ vector
 -
 SFML/Graphics.hpp
 ../headers/SFML/Graphics.hpp
+command.h
+../headers/command.h
+command_queue.h
+../headers/command_queue.h
 
 ../headers/sprite_node.h
 scene_node.h
@@ -71,6 +101,8 @@ aircraft.h
 ../headers/aircraft.h
 resource_holder.h
 ../headers/resource_holder.h
+command_queue.h
+../headers/command_queue.h
 
 /Users/neilconnatty/ClionProjects/SFMLEngine/main.cpp
 Game.h
@@ -86,9 +118,25 @@ Game.h
 aircraft.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/aircraft.h
 
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/command.cpp
+command.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/command.h
+
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/command_queue.cpp
+command_queue.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/command_queue.h
+
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/entity.cpp
 entity.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/entity.h
+
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/player.cpp
+aircraft.h
+-
+iostream
+-
+player.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/player.h
 
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/scene_node.cpp
 algorithm
@@ -104,6 +152,8 @@ sprite_node.h
 
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/world.cpp
 sprite_node.h
+-
+cmath
 -
 world.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/world.h

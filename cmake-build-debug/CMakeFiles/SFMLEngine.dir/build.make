@@ -225,6 +225,78 @@ CMakeFiles/SFMLEngine.dir/src/world.cpp.o.provides: CMakeFiles/SFMLEngine.dir/sr
 CMakeFiles/SFMLEngine.dir/src/world.cpp.o.provides.build: CMakeFiles/SFMLEngine.dir/src/world.cpp.o
 
 
+CMakeFiles/SFMLEngine.dir/src/command.cpp.o: CMakeFiles/SFMLEngine.dir/flags.make
+CMakeFiles/SFMLEngine.dir/src/command.cpp.o: ../src/command.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SFMLEngine.dir/src/command.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFMLEngine.dir/src/command.cpp.o -c /Users/neilconnatty/ClionProjects/SFMLEngine/src/command.cpp
+
+CMakeFiles/SFMLEngine.dir/src/command.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLEngine.dir/src/command.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/neilconnatty/ClionProjects/SFMLEngine/src/command.cpp > CMakeFiles/SFMLEngine.dir/src/command.cpp.i
+
+CMakeFiles/SFMLEngine.dir/src/command.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLEngine.dir/src/command.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/neilconnatty/ClionProjects/SFMLEngine/src/command.cpp -o CMakeFiles/SFMLEngine.dir/src/command.cpp.s
+
+CMakeFiles/SFMLEngine.dir/src/command.cpp.o.requires:
+
+.PHONY : CMakeFiles/SFMLEngine.dir/src/command.cpp.o.requires
+
+CMakeFiles/SFMLEngine.dir/src/command.cpp.o.provides: CMakeFiles/SFMLEngine.dir/src/command.cpp.o.requires
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command.cpp.o.provides.build
+.PHONY : CMakeFiles/SFMLEngine.dir/src/command.cpp.o.provides
+
+CMakeFiles/SFMLEngine.dir/src/command.cpp.o.provides.build: CMakeFiles/SFMLEngine.dir/src/command.cpp.o
+
+
+CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o: CMakeFiles/SFMLEngine.dir/flags.make
+CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o: ../src/command_queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o -c /Users/neilconnatty/ClionProjects/SFMLEngine/src/command_queue.cpp
+
+CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/neilconnatty/ClionProjects/SFMLEngine/src/command_queue.cpp > CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.i
+
+CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/neilconnatty/ClionProjects/SFMLEngine/src/command_queue.cpp -o CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.s
+
+CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o.requires:
+
+.PHONY : CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o.requires
+
+CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o.provides: CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o.requires
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o.provides.build
+.PHONY : CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o.provides
+
+CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o.provides.build: CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o
+
+
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o: CMakeFiles/SFMLEngine.dir/flags.make
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o: ../src/player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SFMLEngine.dir/src/player.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFMLEngine.dir/src/player.cpp.o -c /Users/neilconnatty/ClionProjects/SFMLEngine/src/player.cpp
+
+CMakeFiles/SFMLEngine.dir/src/player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFMLEngine.dir/src/player.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/neilconnatty/ClionProjects/SFMLEngine/src/player.cpp > CMakeFiles/SFMLEngine.dir/src/player.cpp.i
+
+CMakeFiles/SFMLEngine.dir/src/player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFMLEngine.dir/src/player.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/neilconnatty/ClionProjects/SFMLEngine/src/player.cpp -o CMakeFiles/SFMLEngine.dir/src/player.cpp.s
+
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o.requires:
+
+.PHONY : CMakeFiles/SFMLEngine.dir/src/player.cpp.o.requires
+
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o.provides: CMakeFiles/SFMLEngine.dir/src/player.cpp.o.requires
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/player.cpp.o.provides.build
+.PHONY : CMakeFiles/SFMLEngine.dir/src/player.cpp.o.provides
+
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o.provides.build: CMakeFiles/SFMLEngine.dir/src/player.cpp.o
+
+
 # Object files for target SFMLEngine
 SFMLEngine_OBJECTS = \
 "CMakeFiles/SFMLEngine.dir/main.cpp.o" \
@@ -233,7 +305,10 @@ SFMLEngine_OBJECTS = \
 "CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o" \
 "CMakeFiles/SFMLEngine.dir/src/scene_node.cpp.o" \
 "CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o" \
-"CMakeFiles/SFMLEngine.dir/src/world.cpp.o"
+"CMakeFiles/SFMLEngine.dir/src/world.cpp.o" \
+"CMakeFiles/SFMLEngine.dir/src/command.cpp.o" \
+"CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o" \
+"CMakeFiles/SFMLEngine.dir/src/player.cpp.o"
 
 # External object files for target SFMLEngine
 SFMLEngine_EXTERNAL_OBJECTS =
@@ -245,9 +320,12 @@ SFMLEngine: CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o
 SFMLEngine: CMakeFiles/SFMLEngine.dir/src/scene_node.cpp.o
 SFMLEngine: CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o
 SFMLEngine: CMakeFiles/SFMLEngine.dir/src/world.cpp.o
+SFMLEngine: CMakeFiles/SFMLEngine.dir/src/command.cpp.o
+SFMLEngine: CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o
+SFMLEngine: CMakeFiles/SFMLEngine.dir/src/player.cpp.o
 SFMLEngine: CMakeFiles/SFMLEngine.dir/build.make
 SFMLEngine: CMakeFiles/SFMLEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable SFMLEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable SFMLEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SFMLEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -262,6 +340,9 @@ CMakeFiles/SFMLEngine.dir/requires: CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o
 CMakeFiles/SFMLEngine.dir/requires: CMakeFiles/SFMLEngine.dir/src/scene_node.cpp.o.requires
 CMakeFiles/SFMLEngine.dir/requires: CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o.requires
 CMakeFiles/SFMLEngine.dir/requires: CMakeFiles/SFMLEngine.dir/src/world.cpp.o.requires
+CMakeFiles/SFMLEngine.dir/requires: CMakeFiles/SFMLEngine.dir/src/command.cpp.o.requires
+CMakeFiles/SFMLEngine.dir/requires: CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o.requires
+CMakeFiles/SFMLEngine.dir/requires: CMakeFiles/SFMLEngine.dir/src/player.cpp.o.requires
 
 .PHONY : CMakeFiles/SFMLEngine.dir/requires
 

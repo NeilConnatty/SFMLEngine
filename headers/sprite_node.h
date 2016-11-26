@@ -19,7 +19,7 @@ private:
     virtual void draw_current (sf::RenderTarget& target, sf::RenderStates states) const;
 
 private:
-    sf::Sprite _sprite;
+    sf::Sprite m_sprite;
 };
 
 

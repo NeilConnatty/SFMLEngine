@@ -6,6 +6,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/SFMLEngine.dir/src/scene_node.cpp.o"
   "CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o"
   "CMakeFiles/SFMLEngine.dir/src/world.cpp.o"
+  "CMakeFiles/SFMLEngine.dir/src/command.cpp.o"
+  "CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o"
+  "CMakeFiles/SFMLEngine.dir/src/player.cpp.o"
   "SFMLEngine.pdb"
   "SFMLEngine"
 )

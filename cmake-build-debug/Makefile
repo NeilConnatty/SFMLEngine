@@ -204,6 +204,60 @@ src/aircraft.cpp.s:
 	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.s
 .PHONY : src/aircraft.cpp.s
 
+src/command.o: src/command.cpp.o
+
+.PHONY : src/command.o
+
+# target to build an object file
+src/command.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command.cpp.o
+.PHONY : src/command.cpp.o
+
+src/command.i: src/command.cpp.i
+
+.PHONY : src/command.i
+
+# target to preprocess a source file
+src/command.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command.cpp.i
+.PHONY : src/command.cpp.i
+
+src/command.s: src/command.cpp.s
+
+.PHONY : src/command.s
+
+# target to generate assembly for a file
+src/command.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command.cpp.s
+.PHONY : src/command.cpp.s
+
+src/command_queue.o: src/command_queue.cpp.o
+
+.PHONY : src/command_queue.o
+
+# target to build an object file
+src/command_queue.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o
+.PHONY : src/command_queue.cpp.o
+
+src/command_queue.i: src/command_queue.cpp.i
+
+.PHONY : src/command_queue.i
+
+# target to preprocess a source file
+src/command_queue.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.i
+.PHONY : src/command_queue.cpp.i
+
+src/command_queue.s: src/command_queue.cpp.s
+
+.PHONY : src/command_queue.s
+
+# target to generate assembly for a file
+src/command_queue.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.s
+.PHONY : src/command_queue.cpp.s
+
 src/entity.o: src/entity.cpp.o
 
 .PHONY : src/entity.o
@@ -230,6 +284,33 @@ src/entity.s: src/entity.cpp.s
 src/entity.cpp.s:
 	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/entity.cpp.s
 .PHONY : src/entity.cpp.s
+
+src/player.o: src/player.cpp.o
+
+.PHONY : src/player.o
+
+# target to build an object file
+src/player.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/player.cpp.o
+.PHONY : src/player.cpp.o
+
+src/player.i: src/player.cpp.i
+
+.PHONY : src/player.i
+
+# target to preprocess a source file
+src/player.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/player.cpp.i
+.PHONY : src/player.cpp.i
+
+src/player.s: src/player.cpp.s
+
+.PHONY : src/player.s
+
+# target to generate assembly for a file
+src/player.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/player.cpp.s
+.PHONY : src/player.cpp.s
 
 src/scene_node.o: src/scene_node.cpp.o
 
@@ -330,9 +411,18 @@ help:
 	@echo "... src/aircraft.o"
 	@echo "... src/aircraft.i"
 	@echo "... src/aircraft.s"
+	@echo "... src/command.o"
+	@echo "... src/command.i"
+	@echo "... src/command.s"
+	@echo "... src/command_queue.o"
+	@echo "... src/command_queue.i"
+	@echo "... src/command_queue.s"
 	@echo "... src/entity.o"
 	@echo "... src/entity.i"
 	@echo "... src/entity.s"
+	@echo "... src/player.o"
+	@echo "... src/player.i"
+	@echo "... src/player.s"
 	@echo "... src/scene_node.o"
 	@echo "... src/scene_node.i"
 	@echo "... src/scene_node.s"

@@ -4,8 +4,10 @@
 
 #ifndef SFMLENGINE_GAME_H
 #define SFMLENGINE_GAME_H
+
 #include <SFML/Graphics.hpp>
 #include "world.h"
+#include "player.h"
 
 #define PATH_TO_PROJECT_ROOT "../"
 
@@ -21,18 +23,20 @@ private:
     void render ();
 
     void update_statistics (sf::Time deltaTime);
-    void handle_player_input (sf::Keyboard::Key key, bool isPressed);
 
 private:
     static sf::Time TIME_PER_FRAME;
 
-    sf::RenderWindow _window;
-    world _world;
+    sf::RenderWindow m_window;
+    world m_world;
+    player m_player;
 
-    sf::Font _font;
-    sf::Text _statisticsText;
-    sf::Time _statisticsTimeUpdate;
-    std::time_t _statisticsNumFrames;
+    sf::Font m_font;
+    sf::Text m_statisticsText;
+    sf::Time m_statisticsTimeUpdate;
+    std::time_t m_statisticsNumFrames;
+
+    bool m_isPaused;
 };
 
 

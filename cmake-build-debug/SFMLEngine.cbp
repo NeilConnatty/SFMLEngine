@@ -93,7 +93,16 @@
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/aircraft.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/command.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/command_queue.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/entity.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/player.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/scene_node.cpp">

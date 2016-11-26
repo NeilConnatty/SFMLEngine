@@ -8,6 +8,7 @@
 #include "entity.h"
 #include <SFML/Graphics.hpp>
 #include "textures.h"
+#include "category.h"
 
 class aircraft : public entity
 {
@@ -20,10 +21,11 @@ public:
 public:
     explicit aircraft (aircraft::type m_type, const texture_holder &textures);
     virtual void draw_current (sf::RenderTarget &target, sf::RenderStates states) const;
+    virtual unsigned int get_category () const;
 
 private:
-    type _type;
-    sf::Sprite _sprite;
+    type m_type;
+    sf::Sprite m_sprite;
 };
 
 

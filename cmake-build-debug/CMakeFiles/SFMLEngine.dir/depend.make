@@ -3,7 +3,11 @@
 
 CMakeFiles/SFMLEngine.dir/main.cpp.o: ../headers/Game.h
 CMakeFiles/SFMLEngine.dir/main.cpp.o: ../headers/aircraft.h
+CMakeFiles/SFMLEngine.dir/main.cpp.o: ../headers/category.h
+CMakeFiles/SFMLEngine.dir/main.cpp.o: ../headers/command.h
+CMakeFiles/SFMLEngine.dir/main.cpp.o: ../headers/command_queue.h
 CMakeFiles/SFMLEngine.dir/main.cpp.o: ../headers/entity.h
+CMakeFiles/SFMLEngine.dir/main.cpp.o: ../headers/player.h
 CMakeFiles/SFMLEngine.dir/main.cpp.o: ../headers/resource_holder.h
 CMakeFiles/SFMLEngine.dir/main.cpp.o: ../headers/scene_node.h
 CMakeFiles/SFMLEngine.dir/main.cpp.o: ../headers/sprite_node.h
@@ -13,7 +17,11 @@ CMakeFiles/SFMLEngine.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/SFMLEngine.dir/src/Game.cpp.o: ../headers/Game.h
 CMakeFiles/SFMLEngine.dir/src/Game.cpp.o: ../headers/aircraft.h
+CMakeFiles/SFMLEngine.dir/src/Game.cpp.o: ../headers/category.h
+CMakeFiles/SFMLEngine.dir/src/Game.cpp.o: ../headers/command.h
+CMakeFiles/SFMLEngine.dir/src/Game.cpp.o: ../headers/command_queue.h
 CMakeFiles/SFMLEngine.dir/src/Game.cpp.o: ../headers/entity.h
+CMakeFiles/SFMLEngine.dir/src/Game.cpp.o: ../headers/player.h
 CMakeFiles/SFMLEngine.dir/src/Game.cpp.o: ../headers/resource_holder.h
 CMakeFiles/SFMLEngine.dir/src/Game.cpp.o: ../headers/scene_node.h
 CMakeFiles/SFMLEngine.dir/src/Game.cpp.o: ../headers/sprite_node.h
@@ -22,24 +30,62 @@ CMakeFiles/SFMLEngine.dir/src/Game.cpp.o: ../headers/world.h
 CMakeFiles/SFMLEngine.dir/src/Game.cpp.o: ../src/Game.cpp
 
 CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o: ../headers/aircraft.h
+CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o: ../headers/category.h
+CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o: ../headers/command.h
+CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o: ../headers/command_queue.h
 CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o: ../headers/entity.h
 CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o: ../headers/resource_holder.h
 CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o: ../headers/scene_node.h
 CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o: ../headers/textures.h
 CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o: ../src/aircraft.cpp
 
+CMakeFiles/SFMLEngine.dir/src/command.cpp.o: ../headers/category.h
+CMakeFiles/SFMLEngine.dir/src/command.cpp.o: ../headers/command.h
+CMakeFiles/SFMLEngine.dir/src/command.cpp.o: ../headers/command_queue.h
+CMakeFiles/SFMLEngine.dir/src/command.cpp.o: ../headers/scene_node.h
+CMakeFiles/SFMLEngine.dir/src/command.cpp.o: ../src/command.cpp
+
+CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o: ../headers/category.h
+CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o: ../headers/command.h
+CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o: ../headers/command_queue.h
+CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o: ../headers/scene_node.h
+CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o: ../src/command_queue.cpp
+
+CMakeFiles/SFMLEngine.dir/src/entity.cpp.o: ../headers/category.h
+CMakeFiles/SFMLEngine.dir/src/entity.cpp.o: ../headers/command.h
+CMakeFiles/SFMLEngine.dir/src/entity.cpp.o: ../headers/command_queue.h
 CMakeFiles/SFMLEngine.dir/src/entity.cpp.o: ../headers/entity.h
 CMakeFiles/SFMLEngine.dir/src/entity.cpp.o: ../headers/scene_node.h
 CMakeFiles/SFMLEngine.dir/src/entity.cpp.o: ../src/entity.cpp
 
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o: ../headers/aircraft.h
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o: ../headers/category.h
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o: ../headers/command.h
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o: ../headers/command_queue.h
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o: ../headers/entity.h
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o: ../headers/player.h
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o: ../headers/resource_holder.h
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o: ../headers/scene_node.h
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o: ../headers/textures.h
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o: ../src/player.cpp
+
+CMakeFiles/SFMLEngine.dir/src/scene_node.cpp.o: ../headers/category.h
+CMakeFiles/SFMLEngine.dir/src/scene_node.cpp.o: ../headers/command.h
+CMakeFiles/SFMLEngine.dir/src/scene_node.cpp.o: ../headers/command_queue.h
 CMakeFiles/SFMLEngine.dir/src/scene_node.cpp.o: ../headers/scene_node.h
 CMakeFiles/SFMLEngine.dir/src/scene_node.cpp.o: ../src/scene_node.cpp
 
+CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o: ../headers/category.h
+CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o: ../headers/command.h
+CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o: ../headers/command_queue.h
 CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o: ../headers/scene_node.h
 CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o: ../headers/sprite_node.h
 CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o: ../src/sprite_node.cpp
 
 CMakeFiles/SFMLEngine.dir/src/world.cpp.o: ../headers/aircraft.h
+CMakeFiles/SFMLEngine.dir/src/world.cpp.o: ../headers/category.h
+CMakeFiles/SFMLEngine.dir/src/world.cpp.o: ../headers/command.h
+CMakeFiles/SFMLEngine.dir/src/world.cpp.o: ../headers/command_queue.h
 CMakeFiles/SFMLEngine.dir/src/world.cpp.o: ../headers/entity.h
 CMakeFiles/SFMLEngine.dir/src/world.cpp.o: ../headers/resource_holder.h
 CMakeFiles/SFMLEngine.dir/src/world.cpp.o: ../headers/scene_node.h

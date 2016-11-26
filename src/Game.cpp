@@ -7,25 +7,26 @@
 sf::Time Game::TIME_PER_FRAME = sf::seconds(1.f/60.f);
 
 Game::Game () :
-        _window(sf::VideoMode(640, 480), "SFML Application"),
-        _font(),
-        _statisticsText(),
-        _statisticsTimeUpdate(),
-        _statisticsNumFrames(0),
-        _world(_window)
+        m_window(sf::VideoMode(640, 480), "SFML Application"),
+        m_font(),
+        m_statisticsText(),
+        m_statisticsTimeUpdate(),
+        m_statisticsNumFrames(0),
+        m_world(m_window),
+        m_player()
 {
     std::string path(PATH_TO_PROJECT_ROOT);
-    _font.loadFromFile(path.append("assets/Sansation.ttf"));
-    _statisticsText.setFont(_font);
-    _statisticsText.setPosition(5.f, 5.f);
-    _statisticsText.setCharacterSize(10);
+    m_font.loadFromFile(path.append("assets/Sansation.ttf"));
+    m_statisticsText.setFont(m_font);
+    m_statisticsText.setPosition(5.f, 5.f);
+    m_statisticsText.setCharacterSize(10);
 }
 
 void Game::run ()
 {
     sf::Clock clock;
     sf::Time timeSinceLastUpdate = sf::Time::Zero;
-    while (_window.isOpen())
+    while (m_window.isOpen())
     {
         sf::Time elapsedTime = clock.restart();
         timeSinceLastUpdate += elapsedTime;
@@ -33,7 +34,8 @@ void Game::run ()
         {
             timeSinceLastUpdate -= TIME_PER_FRAME;
             process_events();
-            update(TIME_PER_FRAME);
+            if (!m_isPaused)
+                update(TIME_PER_FRAME);
         }
 
         update_statistics(elapsedTime);
@@ -43,54 +45,56 @@ void Game::run ()
 
 void Game::process_events ()
 {
+    command_queue& commands = m_world.get_command_queue();
     sf::Event event;
-    while (_window.pollEvent(event))
+
+    while (m_window.pollEvent(event))
     {
+        m_player.handle_event(event, commands);
+
         switch (event.type) {
-            case sf::Event::KeyPressed:
-                handle_player_input(event.key.code, true);
-                break;
-            case sf::Event::KeyReleased:
-                handle_player_input(event.key.code, false);
-                break;
             case sf::Event::Closed:
-                _window.close();
+                m_window.close();
+                break;
+            case sf::Event::GainedFocus:
+                m_isPaused = false;
+                break;
+            case sf::Event::LostFocus:
+                m_isPaused = true;
                 break;
         }
     }
+
+    m_player.handle_realtime_input(commands);
 }
 
 void Game::update_statistics(sf::Time deltaTime)
 {
-    _statisticsTimeUpdate += deltaTime;
-    _statisticsNumFrames += 1;
+    m_statisticsTimeUpdate += deltaTime;
+    m_statisticsNumFrames += 1;
 
-    if (_statisticsTimeUpdate >= sf::seconds(1.f))
+    if (m_statisticsTimeUpdate >= sf::seconds(1.f))
     {
-        _statisticsText.setString(
-                "Frames / Second = " + std::to_string(_statisticsNumFrames) + "\n" +
-                "Time / Update = " + std::to_string(_statisticsTimeUpdate.asMicroseconds() / _statisticsNumFrames) + "us"
+        m_statisticsText.setString(
+                "Frames / Second = " + std::to_string(m_statisticsNumFrames) + "\n" +
+                "Time / Update = " + std::to_string(m_statisticsTimeUpdate.asMicroseconds() / m_statisticsNumFrames) + "us"
         );
-        _statisticsTimeUpdate -= sf::seconds(1.f);
-        _statisticsNumFrames = 0;
+        m_statisticsTimeUpdate -= sf::seconds(1.f);
+        m_statisticsNumFrames = 0;
     }
-}
-
-void Game::handle_player_input (sf::Keyboard::Key key, bool isPressed)
-{
 }
 
 void Game::update (sf::Time deltaTime)
 {
-    _world.update(deltaTime);
+    m_world.update(deltaTime);
 }
 
 void Game::render ()
 {
-    _window.clear();
-    _world.draw();
+    m_window.clear();
+    m_world.draw();
 
-    _window.setView(_window.getDefaultView());
-    _window.draw(_statisticsText);
-    _window.display();
+    m_window.setView(m_window.getDefaultView());
+    m_window.draw(m_statisticsText);
+    m_window.display();
 }

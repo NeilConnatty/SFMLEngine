@@ -4,7 +4,11 @@
 CMakeFiles/SFMLEngine.dir/main.cpp.o
  ../headers/Game.h
  ../headers/aircraft.h
+ ../headers/category.h
+ ../headers/command.h
+ ../headers/command_queue.h
  ../headers/entity.h
+ ../headers/player.h
  ../headers/resource_holder.h
  ../headers/scene_node.h
  ../headers/sprite_node.h
@@ -14,7 +18,11 @@ CMakeFiles/SFMLEngine.dir/main.cpp.o
 CMakeFiles/SFMLEngine.dir/src/Game.cpp.o
  ../headers/Game.h
  ../headers/aircraft.h
+ ../headers/category.h
+ ../headers/command.h
+ ../headers/command_queue.h
  ../headers/entity.h
+ ../headers/player.h
  ../headers/resource_holder.h
  ../headers/scene_node.h
  ../headers/sprite_node.h
@@ -23,24 +31,62 @@ CMakeFiles/SFMLEngine.dir/src/Game.cpp.o
  /Users/neilconnatty/ClionProjects/SFMLEngine/src/Game.cpp
 CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o
  ../headers/aircraft.h
+ ../headers/category.h
+ ../headers/command.h
+ ../headers/command_queue.h
  ../headers/entity.h
  ../headers/resource_holder.h
  ../headers/scene_node.h
  ../headers/textures.h
  /Users/neilconnatty/ClionProjects/SFMLEngine/src/aircraft.cpp
+CMakeFiles/SFMLEngine.dir/src/command.cpp.o
+ ../headers/category.h
+ ../headers/command.h
+ ../headers/command_queue.h
+ ../headers/scene_node.h
+ /Users/neilconnatty/ClionProjects/SFMLEngine/src/command.cpp
+CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o
+ ../headers/category.h
+ ../headers/command.h
+ ../headers/command_queue.h
+ ../headers/scene_node.h
+ /Users/neilconnatty/ClionProjects/SFMLEngine/src/command_queue.cpp
 CMakeFiles/SFMLEngine.dir/src/entity.cpp.o
+ ../headers/category.h
+ ../headers/command.h
+ ../headers/command_queue.h
  ../headers/entity.h
  ../headers/scene_node.h
  /Users/neilconnatty/ClionProjects/SFMLEngine/src/entity.cpp
+CMakeFiles/SFMLEngine.dir/src/player.cpp.o
+ ../headers/aircraft.h
+ ../headers/category.h
+ ../headers/command.h
+ ../headers/command_queue.h
+ ../headers/entity.h
+ ../headers/player.h
+ ../headers/resource_holder.h
+ ../headers/scene_node.h
+ ../headers/textures.h
+ /Users/neilconnatty/ClionProjects/SFMLEngine/src/player.cpp
 CMakeFiles/SFMLEngine.dir/src/scene_node.cpp.o
+ ../headers/category.h
+ ../headers/command.h
+ ../headers/command_queue.h
  ../headers/scene_node.h
  /Users/neilconnatty/ClionProjects/SFMLEngine/src/scene_node.cpp
 CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o
+ ../headers/category.h
+ ../headers/command.h
+ ../headers/command_queue.h
  ../headers/scene_node.h
  ../headers/sprite_node.h
  /Users/neilconnatty/ClionProjects/SFMLEngine/src/sprite_node.cpp
 CMakeFiles/SFMLEngine.dir/src/world.cpp.o
  ../headers/aircraft.h
+ ../headers/category.h
+ ../headers/command.h
+ ../headers/command_queue.h
  ../headers/entity.h
  ../headers/resource_holder.h
  ../headers/scene_node.h
