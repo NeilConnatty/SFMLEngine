@@ -31,14 +31,16 @@ SFML/System/Time.hpp
 -
 category.h
 ../headers/category.h
-scene_node.h
-../headers/scene_node.h
+functional
+-
+cassert
+-
 
 ../headers/command_queue.h
+command.h
+-
 queue
 -
-command.h
-../headers/command.h
 
 ../headers/entity.h
 SFML/System.hpp
@@ -137,6 +139,8 @@ iostream
 -
 player.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/player.h
+command_queue.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/command_queue.h
 
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/scene_node.cpp
 algorithm

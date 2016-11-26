@@ -5,20 +5,18 @@
 #ifndef SFMLENGINE_COMMAND_QUEUE_H
 #define SFMLENGINE_COMMAND_QUEUE_H
 
+#include <command.h>
 #include <queue>
-#include "command.h"
-
-struct command;
 
 class command_queue
 {
 public:
-    void push (const command& com);
-    command pop ();
-    bool is_empty () const;
+    void                    push (const command& com);
+    command                 pop ();
+    bool                    is_empty () const;
 
 private:
-    std::queue<command> m_queue;
+    std::queue<command>     m_queue;
 };
 
 

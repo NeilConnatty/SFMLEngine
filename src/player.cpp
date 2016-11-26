@@ -5,14 +5,16 @@
 #include <aircraft.h>
 #include <iostream>
 #include "player.h"
+#include "command_queue.h"
 
 struct aircraft_mover
 {
-    aircraft_mover (float vx, float vy) : velocity(vx, vy)
+    aircraft_mover (float vx, float vy)
+            : velocity(vx, vy)
     {
     }
 
-    void operator () (aircraft& craft, sf::Time dt)
+    void operator () (aircraft& craft, sf::Time dt) const
     {
         craft.accelerate(velocity);
     }
@@ -24,11 +26,13 @@ player::player ()
 {
     m_keyBinding[sf::Keyboard::Left] = MOVE_LEFT;
     m_keyBinding[sf::Keyboard::Right] = MOVE_RIGHT;
+    m_keyBinding[sf::Keyboard::Up] = MOVE_UP;
+    m_keyBinding[sf::Keyboard::Down] = MOVE_DOWN;
     m_keyBinding[sf::Keyboard::P] = PRINT_POSITION;
 
     initialize_actions();
 
-    for (auto pair : m_actionBinding) {
+    for (auto& pair : m_actionBinding) {
         pair.second.category = category::PLAYER_AIRCRAFT;
     }
 }
@@ -95,7 +99,7 @@ void player::initialize_actions ()
     m_actionBinding[MOVE_DOWN].action = derived_action<aircraft>(aircraft_mover(0.f, playerSpeed));
 }
 
-static bool player::is_realtime_action (action act)
+bool player::is_realtime_action (action act)
 {
     switch (act)
     {

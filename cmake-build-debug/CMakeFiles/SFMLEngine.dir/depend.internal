@@ -42,14 +42,11 @@ CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o
 CMakeFiles/SFMLEngine.dir/src/command.cpp.o
  ../headers/category.h
  ../headers/command.h
- ../headers/command_queue.h
- ../headers/scene_node.h
  /Users/neilconnatty/ClionProjects/SFMLEngine/src/command.cpp
 CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o
  ../headers/category.h
  ../headers/command.h
  ../headers/command_queue.h
- ../headers/scene_node.h
  /Users/neilconnatty/ClionProjects/SFMLEngine/src/command_queue.cpp
 CMakeFiles/SFMLEngine.dir/src/entity.cpp.o
  ../headers/category.h

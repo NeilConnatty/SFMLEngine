@@ -77,7 +77,8 @@ void Game::update_statistics(sf::Time deltaTime)
     {
         m_statisticsText.setString(
                 "Frames / Second = " + std::to_string(m_statisticsNumFrames) + "\n" +
-                "Time / Update = " + std::to_string(m_statisticsTimeUpdate.asMicroseconds() / m_statisticsNumFrames) + "us"
+                "Time / Update = " + std::to_string(m_statisticsTimeUpdate.asMicroseconds()
+                                                    / m_statisticsNumFrames) + "us"
         );
         m_statisticsTimeUpdate -= sf::seconds(1.f);
         m_statisticsNumFrames = 0;

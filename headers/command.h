@@ -7,7 +7,9 @@
 
 #include <SFML/System/Time.hpp>
 #include "category.h"
-#include "scene_node.h"
+
+#include <functional>
+#include <cassert>
 
 class scene_node;
 
