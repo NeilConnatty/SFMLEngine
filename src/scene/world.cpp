@@ -2,9 +2,9 @@
 // Created by Neil Connatty on 2016-11-15.
 //
 
-#include <sprite_node.h>
+#include <scene/sprite_node.h>
 #include <cmath>
-#include "world.h"
+#include "scene/world.h"
 
 world::world (sf::RenderWindow &window) :
         m_window(window),

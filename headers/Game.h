@@ -6,7 +6,7 @@
 #define SFMLENGINE_GAME_H
 
 #include <SFML/Graphics.hpp>
-#include "world.h"
+#include "scene/world.h"
 #include "player.h"
 
 #define PATH_TO_PROJECT_ROOT "../"
@@ -14,29 +14,29 @@
 class Game
 {
 public:
-    Game ();
-    void run ();
+                            Game ();
+    void                    run ();
 
 private:
-    void process_events ();
-    void update (sf::Time deltaTime);
-    void render ();
+    void                    process_events ();
+    void                    update (sf::Time deltaTime);
+    void                    render ();
 
-    void update_statistics (sf::Time deltaTime);
+    void                    update_statistics (sf::Time deltaTime);
 
 private:
-    static sf::Time TIME_PER_FRAME;
+    static sf::Time         TIME_PER_FRAME;
 
-    sf::RenderWindow m_window;
-    world m_world;
-    player m_player;
+    sf::RenderWindow        m_window;
+    world                   m_world;
+    player                  m_player;
 
-    sf::Font m_font;
-    sf::Text m_statisticsText;
-    sf::Time m_statisticsTimeUpdate;
-    std::time_t m_statisticsNumFrames;
+    sf::Font                m_font;
+    sf::Text                m_statisticsText;
+    sf::Time                m_statisticsTimeUpdate;
+    std::time_t             m_statisticsNumFrames;
 
-    bool m_isPaused;
+    bool                    m_isPaused;
 };
 
 

@@ -79,6 +79,22 @@ CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o
  ../headers/scene_node.h
  ../headers/sprite_node.h
  /Users/neilconnatty/ClionProjects/SFMLEngine/src/sprite_node.cpp
+CMakeFiles/SFMLEngine.dir/src/state.cpp.o
+ ../headers/fonts.h
+ ../headers/resource_holder.h
+ ../headers/state.h
+ ../headers/state_identifiers.h
+ ../headers/state_stack.h
+ ../headers/textures.h
+ /Users/neilconnatty/ClionProjects/SFMLEngine/src/state.cpp
+CMakeFiles/SFMLEngine.dir/src/state_stack.cpp.o
+ ../headers/fonts.h
+ ../headers/resource_holder.h
+ ../headers/state.h
+ ../headers/state_identifiers.h
+ ../headers/state_stack.h
+ ../headers/textures.h
+ /Users/neilconnatty/ClionProjects/SFMLEngine/src/state_stack.cpp
 CMakeFiles/SFMLEngine.dir/src/world.cpp.o
  ../headers/aircraft.h
  ../headers/category.h

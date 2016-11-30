@@ -79,6 +79,22 @@ CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o: ../headers/scene_node.h
 CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o: ../headers/sprite_node.h
 CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o: ../src/sprite_node.cpp
 
+CMakeFiles/SFMLEngine.dir/src/state.cpp.o: ../headers/fonts.h
+CMakeFiles/SFMLEngine.dir/src/state.cpp.o: ../headers/resource_holder.h
+CMakeFiles/SFMLEngine.dir/src/state.cpp.o: ../headers/state.h
+CMakeFiles/SFMLEngine.dir/src/state.cpp.o: ../headers/state_identifiers.h
+CMakeFiles/SFMLEngine.dir/src/state.cpp.o: ../headers/state_stack.h
+CMakeFiles/SFMLEngine.dir/src/state.cpp.o: ../headers/textures.h
+CMakeFiles/SFMLEngine.dir/src/state.cpp.o: ../src/state.cpp
+
+CMakeFiles/SFMLEngine.dir/src/state_stack.cpp.o: ../headers/fonts.h
+CMakeFiles/SFMLEngine.dir/src/state_stack.cpp.o: ../headers/resource_holder.h
+CMakeFiles/SFMLEngine.dir/src/state_stack.cpp.o: ../headers/state.h
+CMakeFiles/SFMLEngine.dir/src/state_stack.cpp.o: ../headers/state_identifiers.h
+CMakeFiles/SFMLEngine.dir/src/state_stack.cpp.o: ../headers/state_stack.h
+CMakeFiles/SFMLEngine.dir/src/state_stack.cpp.o: ../headers/textures.h
+CMakeFiles/SFMLEngine.dir/src/state_stack.cpp.o: ../src/state_stack.cpp
+
 CMakeFiles/SFMLEngine.dir/src/world.cpp.o: ../headers/aircraft.h
 CMakeFiles/SFMLEngine.dir/src/world.cpp.o: ../headers/category.h
 CMakeFiles/SFMLEngine.dir/src/world.cpp.o: ../headers/command.h

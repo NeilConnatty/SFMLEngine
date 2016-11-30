@@ -177,113 +177,86 @@ src/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
-src/aircraft.o: src/aircraft.cpp.o
+src/application.o: src/application.cpp.o
 
-.PHONY : src/aircraft.o
-
-# target to build an object file
-src/aircraft.cpp.o:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.o
-.PHONY : src/aircraft.cpp.o
-
-src/aircraft.i: src/aircraft.cpp.i
-
-.PHONY : src/aircraft.i
-
-# target to preprocess a source file
-src/aircraft.cpp.i:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.i
-.PHONY : src/aircraft.cpp.i
-
-src/aircraft.s: src/aircraft.cpp.s
-
-.PHONY : src/aircraft.s
-
-# target to generate assembly for a file
-src/aircraft.cpp.s:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/aircraft.cpp.s
-.PHONY : src/aircraft.cpp.s
-
-src/command.o: src/command.cpp.o
-
-.PHONY : src/command.o
+.PHONY : src/application.o
 
 # target to build an object file
-src/command.cpp.o:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command.cpp.o
-.PHONY : src/command.cpp.o
+src/application.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/application.cpp.o
+.PHONY : src/application.cpp.o
 
-src/command.i: src/command.cpp.i
+src/application.i: src/application.cpp.i
 
-.PHONY : src/command.i
+.PHONY : src/application.i
 
 # target to preprocess a source file
-src/command.cpp.i:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command.cpp.i
-.PHONY : src/command.cpp.i
+src/application.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/application.cpp.i
+.PHONY : src/application.cpp.i
 
-src/command.s: src/command.cpp.s
+src/application.s: src/application.cpp.s
 
-.PHONY : src/command.s
+.PHONY : src/application.s
 
 # target to generate assembly for a file
-src/command.cpp.s:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command.cpp.s
-.PHONY : src/command.cpp.s
+src/application.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/application.cpp.s
+.PHONY : src/application.cpp.s
 
-src/command_queue.o: src/command_queue.cpp.o
+src/commands/command.o: src/commands/command.cpp.o
 
-.PHONY : src/command_queue.o
+.PHONY : src/commands/command.o
 
 # target to build an object file
-src/command_queue.cpp.o:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.o
-.PHONY : src/command_queue.cpp.o
+src/commands/command.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/commands/command.cpp.o
+.PHONY : src/commands/command.cpp.o
 
-src/command_queue.i: src/command_queue.cpp.i
+src/commands/command.i: src/commands/command.cpp.i
 
-.PHONY : src/command_queue.i
+.PHONY : src/commands/command.i
 
 # target to preprocess a source file
-src/command_queue.cpp.i:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.i
-.PHONY : src/command_queue.cpp.i
+src/commands/command.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/commands/command.cpp.i
+.PHONY : src/commands/command.cpp.i
 
-src/command_queue.s: src/command_queue.cpp.s
+src/commands/command.s: src/commands/command.cpp.s
 
-.PHONY : src/command_queue.s
+.PHONY : src/commands/command.s
 
 # target to generate assembly for a file
-src/command_queue.cpp.s:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/command_queue.cpp.s
-.PHONY : src/command_queue.cpp.s
+src/commands/command.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/commands/command.cpp.s
+.PHONY : src/commands/command.cpp.s
 
-src/entity.o: src/entity.cpp.o
+src/commands/command_queue.o: src/commands/command_queue.cpp.o
 
-.PHONY : src/entity.o
+.PHONY : src/commands/command_queue.o
 
 # target to build an object file
-src/entity.cpp.o:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/entity.cpp.o
-.PHONY : src/entity.cpp.o
+src/commands/command_queue.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/commands/command_queue.cpp.o
+.PHONY : src/commands/command_queue.cpp.o
 
-src/entity.i: src/entity.cpp.i
+src/commands/command_queue.i: src/commands/command_queue.cpp.i
 
-.PHONY : src/entity.i
+.PHONY : src/commands/command_queue.i
 
 # target to preprocess a source file
-src/entity.cpp.i:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/entity.cpp.i
-.PHONY : src/entity.cpp.i
+src/commands/command_queue.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/commands/command_queue.cpp.i
+.PHONY : src/commands/command_queue.cpp.i
 
-src/entity.s: src/entity.cpp.s
+src/commands/command_queue.s: src/commands/command_queue.cpp.s
 
-.PHONY : src/entity.s
+.PHONY : src/commands/command_queue.s
 
 # target to generate assembly for a file
-src/entity.cpp.s:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/entity.cpp.s
-.PHONY : src/entity.cpp.s
+src/commands/command_queue.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/commands/command_queue.cpp.s
+.PHONY : src/commands/command_queue.cpp.s
 
 src/player.o: src/player.cpp.o
 
@@ -312,86 +285,302 @@ src/player.cpp.s:
 	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/player.cpp.s
 .PHONY : src/player.cpp.s
 
-src/scene_node.o: src/scene_node.cpp.o
+src/scene/aircraft.o: src/scene/aircraft.cpp.o
 
-.PHONY : src/scene_node.o
-
-# target to build an object file
-src/scene_node.cpp.o:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene_node.cpp.o
-.PHONY : src/scene_node.cpp.o
-
-src/scene_node.i: src/scene_node.cpp.i
-
-.PHONY : src/scene_node.i
-
-# target to preprocess a source file
-src/scene_node.cpp.i:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene_node.cpp.i
-.PHONY : src/scene_node.cpp.i
-
-src/scene_node.s: src/scene_node.cpp.s
-
-.PHONY : src/scene_node.s
-
-# target to generate assembly for a file
-src/scene_node.cpp.s:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene_node.cpp.s
-.PHONY : src/scene_node.cpp.s
-
-src/sprite_node.o: src/sprite_node.cpp.o
-
-.PHONY : src/sprite_node.o
+.PHONY : src/scene/aircraft.o
 
 # target to build an object file
-src/sprite_node.cpp.o:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.o
-.PHONY : src/sprite_node.cpp.o
+src/scene/aircraft.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/aircraft.cpp.o
+.PHONY : src/scene/aircraft.cpp.o
 
-src/sprite_node.i: src/sprite_node.cpp.i
+src/scene/aircraft.i: src/scene/aircraft.cpp.i
 
-.PHONY : src/sprite_node.i
+.PHONY : src/scene/aircraft.i
 
 # target to preprocess a source file
-src/sprite_node.cpp.i:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.i
-.PHONY : src/sprite_node.cpp.i
+src/scene/aircraft.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/aircraft.cpp.i
+.PHONY : src/scene/aircraft.cpp.i
 
-src/sprite_node.s: src/sprite_node.cpp.s
+src/scene/aircraft.s: src/scene/aircraft.cpp.s
 
-.PHONY : src/sprite_node.s
+.PHONY : src/scene/aircraft.s
 
 # target to generate assembly for a file
-src/sprite_node.cpp.s:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/sprite_node.cpp.s
-.PHONY : src/sprite_node.cpp.s
+src/scene/aircraft.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/aircraft.cpp.s
+.PHONY : src/scene/aircraft.cpp.s
 
-src/world.o: src/world.cpp.o
+src/scene/entity.o: src/scene/entity.cpp.o
 
-.PHONY : src/world.o
+.PHONY : src/scene/entity.o
 
 # target to build an object file
-src/world.cpp.o:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/world.cpp.o
-.PHONY : src/world.cpp.o
+src/scene/entity.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/entity.cpp.o
+.PHONY : src/scene/entity.cpp.o
 
-src/world.i: src/world.cpp.i
+src/scene/entity.i: src/scene/entity.cpp.i
 
-.PHONY : src/world.i
+.PHONY : src/scene/entity.i
 
 # target to preprocess a source file
-src/world.cpp.i:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/world.cpp.i
-.PHONY : src/world.cpp.i
+src/scene/entity.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/entity.cpp.i
+.PHONY : src/scene/entity.cpp.i
 
-src/world.s: src/world.cpp.s
+src/scene/entity.s: src/scene/entity.cpp.s
 
-.PHONY : src/world.s
+.PHONY : src/scene/entity.s
 
 # target to generate assembly for a file
-src/world.cpp.s:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/world.cpp.s
-.PHONY : src/world.cpp.s
+src/scene/entity.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/entity.cpp.s
+.PHONY : src/scene/entity.cpp.s
+
+src/scene/scene_node.o: src/scene/scene_node.cpp.o
+
+.PHONY : src/scene/scene_node.o
+
+# target to build an object file
+src/scene/scene_node.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/scene_node.cpp.o
+.PHONY : src/scene/scene_node.cpp.o
+
+src/scene/scene_node.i: src/scene/scene_node.cpp.i
+
+.PHONY : src/scene/scene_node.i
+
+# target to preprocess a source file
+src/scene/scene_node.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/scene_node.cpp.i
+.PHONY : src/scene/scene_node.cpp.i
+
+src/scene/scene_node.s: src/scene/scene_node.cpp.s
+
+.PHONY : src/scene/scene_node.s
+
+# target to generate assembly for a file
+src/scene/scene_node.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/scene_node.cpp.s
+.PHONY : src/scene/scene_node.cpp.s
+
+src/scene/sprite_node.o: src/scene/sprite_node.cpp.o
+
+.PHONY : src/scene/sprite_node.o
+
+# target to build an object file
+src/scene/sprite_node.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/sprite_node.cpp.o
+.PHONY : src/scene/sprite_node.cpp.o
+
+src/scene/sprite_node.i: src/scene/sprite_node.cpp.i
+
+.PHONY : src/scene/sprite_node.i
+
+# target to preprocess a source file
+src/scene/sprite_node.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/sprite_node.cpp.i
+.PHONY : src/scene/sprite_node.cpp.i
+
+src/scene/sprite_node.s: src/scene/sprite_node.cpp.s
+
+.PHONY : src/scene/sprite_node.s
+
+# target to generate assembly for a file
+src/scene/sprite_node.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/sprite_node.cpp.s
+.PHONY : src/scene/sprite_node.cpp.s
+
+src/scene/world.o: src/scene/world.cpp.o
+
+.PHONY : src/scene/world.o
+
+# target to build an object file
+src/scene/world.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/world.cpp.o
+.PHONY : src/scene/world.cpp.o
+
+src/scene/world.i: src/scene/world.cpp.i
+
+.PHONY : src/scene/world.i
+
+# target to preprocess a source file
+src/scene/world.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/world.cpp.i
+.PHONY : src/scene/world.cpp.i
+
+src/scene/world.s: src/scene/world.cpp.s
+
+.PHONY : src/scene/world.s
+
+# target to generate assembly for a file
+src/scene/world.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/scene/world.cpp.s
+.PHONY : src/scene/world.cpp.s
+
+src/states/game_state.o: src/states/game_state.cpp.o
+
+.PHONY : src/states/game_state.o
+
+# target to build an object file
+src/states/game_state.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/game_state.cpp.o
+.PHONY : src/states/game_state.cpp.o
+
+src/states/game_state.i: src/states/game_state.cpp.i
+
+.PHONY : src/states/game_state.i
+
+# target to preprocess a source file
+src/states/game_state.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/game_state.cpp.i
+.PHONY : src/states/game_state.cpp.i
+
+src/states/game_state.s: src/states/game_state.cpp.s
+
+.PHONY : src/states/game_state.s
+
+# target to generate assembly for a file
+src/states/game_state.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/game_state.cpp.s
+.PHONY : src/states/game_state.cpp.s
+
+src/states/menu_state.o: src/states/menu_state.cpp.o
+
+.PHONY : src/states/menu_state.o
+
+# target to build an object file
+src/states/menu_state.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/menu_state.cpp.o
+.PHONY : src/states/menu_state.cpp.o
+
+src/states/menu_state.i: src/states/menu_state.cpp.i
+
+.PHONY : src/states/menu_state.i
+
+# target to preprocess a source file
+src/states/menu_state.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/menu_state.cpp.i
+.PHONY : src/states/menu_state.cpp.i
+
+src/states/menu_state.s: src/states/menu_state.cpp.s
+
+.PHONY : src/states/menu_state.s
+
+# target to generate assembly for a file
+src/states/menu_state.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/menu_state.cpp.s
+.PHONY : src/states/menu_state.cpp.s
+
+src/states/pause_state.o: src/states/pause_state.cpp.o
+
+.PHONY : src/states/pause_state.o
+
+# target to build an object file
+src/states/pause_state.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o
+.PHONY : src/states/pause_state.cpp.o
+
+src/states/pause_state.i: src/states/pause_state.cpp.i
+
+.PHONY : src/states/pause_state.i
+
+# target to preprocess a source file
+src/states/pause_state.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.i
+.PHONY : src/states/pause_state.cpp.i
+
+src/states/pause_state.s: src/states/pause_state.cpp.s
+
+.PHONY : src/states/pause_state.s
+
+# target to generate assembly for a file
+src/states/pause_state.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.s
+.PHONY : src/states/pause_state.cpp.s
+
+src/states/state.o: src/states/state.cpp.o
+
+.PHONY : src/states/state.o
+
+# target to build an object file
+src/states/state.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/state.cpp.o
+.PHONY : src/states/state.cpp.o
+
+src/states/state.i: src/states/state.cpp.i
+
+.PHONY : src/states/state.i
+
+# target to preprocess a source file
+src/states/state.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/state.cpp.i
+.PHONY : src/states/state.cpp.i
+
+src/states/state.s: src/states/state.cpp.s
+
+.PHONY : src/states/state.s
+
+# target to generate assembly for a file
+src/states/state.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/state.cpp.s
+.PHONY : src/states/state.cpp.s
+
+src/states/state_stack.o: src/states/state_stack.cpp.o
+
+.PHONY : src/states/state_stack.o
+
+# target to build an object file
+src/states/state_stack.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/state_stack.cpp.o
+.PHONY : src/states/state_stack.cpp.o
+
+src/states/state_stack.i: src/states/state_stack.cpp.i
+
+.PHONY : src/states/state_stack.i
+
+# target to preprocess a source file
+src/states/state_stack.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/state_stack.cpp.i
+.PHONY : src/states/state_stack.cpp.i
+
+src/states/state_stack.s: src/states/state_stack.cpp.s
+
+.PHONY : src/states/state_stack.s
+
+# target to generate assembly for a file
+src/states/state_stack.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/state_stack.cpp.s
+.PHONY : src/states/state_stack.cpp.s
+
+src/states/title_state.o: src/states/title_state.cpp.o
+
+.PHONY : src/states/title_state.o
+
+# target to build an object file
+src/states/title_state.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/title_state.cpp.o
+.PHONY : src/states/title_state.cpp.o
+
+src/states/title_state.i: src/states/title_state.cpp.i
+
+.PHONY : src/states/title_state.i
+
+# target to preprocess a source file
+src/states/title_state.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/title_state.cpp.i
+.PHONY : src/states/title_state.cpp.i
+
+src/states/title_state.s: src/states/title_state.cpp.s
+
+.PHONY : src/states/title_state.s
+
+# target to generate assembly for a file
+src/states/title_state.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/title_state.cpp.s
+.PHONY : src/states/title_state.cpp.s
 
 # Help Target
 help:
@@ -408,30 +597,51 @@ help:
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
-	@echo "... src/aircraft.o"
-	@echo "... src/aircraft.i"
-	@echo "... src/aircraft.s"
-	@echo "... src/command.o"
-	@echo "... src/command.i"
-	@echo "... src/command.s"
-	@echo "... src/command_queue.o"
-	@echo "... src/command_queue.i"
-	@echo "... src/command_queue.s"
-	@echo "... src/entity.o"
-	@echo "... src/entity.i"
-	@echo "... src/entity.s"
+	@echo "... src/application.o"
+	@echo "... src/application.i"
+	@echo "... src/application.s"
+	@echo "... src/commands/command.o"
+	@echo "... src/commands/command.i"
+	@echo "... src/commands/command.s"
+	@echo "... src/commands/command_queue.o"
+	@echo "... src/commands/command_queue.i"
+	@echo "... src/commands/command_queue.s"
 	@echo "... src/player.o"
 	@echo "... src/player.i"
 	@echo "... src/player.s"
-	@echo "... src/scene_node.o"
-	@echo "... src/scene_node.i"
-	@echo "... src/scene_node.s"
-	@echo "... src/sprite_node.o"
-	@echo "... src/sprite_node.i"
-	@echo "... src/sprite_node.s"
-	@echo "... src/world.o"
-	@echo "... src/world.i"
-	@echo "... src/world.s"
+	@echo "... src/scene/aircraft.o"
+	@echo "... src/scene/aircraft.i"
+	@echo "... src/scene/aircraft.s"
+	@echo "... src/scene/entity.o"
+	@echo "... src/scene/entity.i"
+	@echo "... src/scene/entity.s"
+	@echo "... src/scene/scene_node.o"
+	@echo "... src/scene/scene_node.i"
+	@echo "... src/scene/scene_node.s"
+	@echo "... src/scene/sprite_node.o"
+	@echo "... src/scene/sprite_node.i"
+	@echo "... src/scene/sprite_node.s"
+	@echo "... src/scene/world.o"
+	@echo "... src/scene/world.i"
+	@echo "... src/scene/world.s"
+	@echo "... src/states/game_state.o"
+	@echo "... src/states/game_state.i"
+	@echo "... src/states/game_state.s"
+	@echo "... src/states/menu_state.o"
+	@echo "... src/states/menu_state.i"
+	@echo "... src/states/menu_state.s"
+	@echo "... src/states/pause_state.o"
+	@echo "... src/states/pause_state.i"
+	@echo "... src/states/pause_state.s"
+	@echo "... src/states/state.o"
+	@echo "... src/states/state.i"
+	@echo "... src/states/state.s"
+	@echo "... src/states/state_stack.o"
+	@echo "... src/states/state_stack.i"
+	@echo "... src/states/state_stack.s"
+	@echo "... src/states/title_state.o"
+	@echo "... src/states/title_state.i"
+	@echo "... src/states/title_state.s"
 .PHONY : help
 
 

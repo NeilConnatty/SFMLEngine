@@ -48,6 +48,12 @@ SFML/System.hpp
 scene_node.h
 ../headers/scene_node.h
 
+../headers/fonts.h
+SFML/Graphics.hpp
+-
+resource_holder.h
+../headers/resource_holder.h
+
 ../headers/player.h
 command_queue.h
 ../headers/command_queue.h
@@ -76,6 +82,38 @@ command_queue.h
 scene_node.h
 ../headers/scene_node.h
 SFML/Graphics/Sprite.hpp
+-
+
+../headers/state.h
+SFML/System/Time.hpp
+-
+SFML/Window/Event.hpp
+-
+state_identifiers.h
+../headers/state_identifiers.h
+textures.h
+../headers/textures.h
+fonts.h
+../headers/fonts.h
+memory
+-
+
+../headers/state_identifiers.h
+
+../headers/state_stack.h
+SFML/System/NonCopyable.hpp
+-
+SFML/System/Time.hpp
+-
+state.h
+../headers/state.h
+state_identifiers.h
+../headers/state_identifiers.h
+vector
+-
+map
+-
+functional
 -
 
 ../headers/textures.h
@@ -139,8 +177,6 @@ iostream
 -
 player.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/player.h
-command_queue.h
-/Users/neilconnatty/ClionProjects/SFMLEngine/src/command_queue.h
 
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/scene_node.cpp
 algorithm
@@ -153,6 +189,18 @@ scene_node.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/sprite_node.cpp
 sprite_node.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/sprite_node.h
+
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/state.cpp
+state.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/state.h
+state_stack.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/state_stack.h
+
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/state_stack.cpp
+state_stack.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/state_stack.h
+cassert
+-
 
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/world.cpp
 sprite_node.h

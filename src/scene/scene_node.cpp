@@ -4,7 +4,7 @@
 
 #include <algorithm>
 #include <assert.h>
-#include "scene_node.h"
+#include "scene/scene_node.h"
 
 scene_node::scene_node () :
     m_children(),

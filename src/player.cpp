@@ -2,10 +2,9 @@
 // Created by Neil Connatty on 2016-11-25.
 //
 
-#include <aircraft.h>
+#include <scene/aircraft.h>
 #include <iostream>
 #include "player.h"
-#include "command_queue.h"
 
 struct aircraft_mover
 {

@@ -2,7 +2,7 @@
 // Created by Neil Connatty on 2016-11-15.
 //
 
-#include "sprite_node.h"
+#include "scene/sprite_node.h"
 
 sprite_node::sprite_node (const sf::Texture &texture) :
         m_sprite(texture)

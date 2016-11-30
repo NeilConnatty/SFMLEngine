@@ -2,7 +2,7 @@
 // Created by Neil Connatty on 2016-11-25.
 //
 
-#include "command_queue.h"
+#include "commands/command_queue.h"
 
 void command_queue::push (const command &com)
 {

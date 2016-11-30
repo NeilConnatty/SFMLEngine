@@ -2,7 +2,7 @@
 // Created by Neil Connatty on 2016-11-03.
 //
 
-#include "entity.h"
+#include "scene/entity.h"
 
 void entity::set_velocity (sf::Vector2f velocity)
 {

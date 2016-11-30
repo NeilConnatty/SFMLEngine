@@ -5,8 +5,8 @@
 #ifndef SFMLENGINE_COMMAND_H
 #define SFMLENGINE_COMMAND_H
 
-#include <SFML/System/Time.hpp>
-#include "category.h"
+#include <SFML/Time.hpp>
+#include "scene/category.h"
 
 #include <functional>
 #include <cassert>
@@ -17,8 +17,8 @@ struct command
 {
     command();
 
-    std::function<void(scene_node&, sf::Time)> action;
-    unsigned int category;
+    std::function<void(scene_node&, sf::Time)>  action;
+    unsigned int                                category;
 };
 
 template <typename game_object, typename function>

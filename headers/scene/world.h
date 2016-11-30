@@ -6,18 +6,18 @@
 #define SFMLENGINE_WORLD_H
 
 
-#include <SFML/System/NonCopyable.hpp>
-#include <SFML/Graphics/View.hpp>
-#include <SFML/Graphics/Texture.hpp>
+#include <SFML/NonCopyable.hpp>
+#include <SFML/View.hpp>
+#include <SFML/Texture.hpp>
 
 #include <array>
 
-#include "textures.h"
-#include "scene_node.h"
-#include "sprite_node.h"
-#include "aircraft.h"
-#include "resource_holder.h"
-#include "command_queue.h"
+#include "resources/textures.h"
+#include "scene/scene_node.h"
+#include "scene/sprite_node.h"
+#include "scene/aircraft.h"
+#include "resources/resource_holder.h"
+#include "commands/command_queue.h"
 
 #define SCROLL_SPEED -50.0f
 #define WORLD_SIZE 2000.f
@@ -26,14 +26,14 @@
 class world : private sf::NonCopyable
 {
 public:
-    explicit world (sf::RenderWindow& window);
-    void update (sf::Time deltaTime);
-    void draw ();
-    command_queue& get_command_queue ();
+    explicit            world (sf::RenderWindow& window);
+    void                update (sf::Time deltaTime);
+    void                draw ();
+    command_queue&      get_command_queue ();
 
 private:
-    void load_textures ();
-    void build_scene ();
+    void                load_textures ();
+    void                build_scene ();
 
 private:
     enum layer {

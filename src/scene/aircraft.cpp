@@ -2,7 +2,7 @@
 // Created by Neil Connatty on 2016-11-03.
 //
 
-#include "aircraft.h"
+#include "scene/aircraft.h"
 
 using namespace textures;
 

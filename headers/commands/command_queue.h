@@ -5,7 +5,7 @@
 #ifndef SFMLENGINE_COMMAND_QUEUE_H
 #define SFMLENGINE_COMMAND_QUEUE_H
 
-#include <command.h>
+#include <commands/command.h>
 #include <queue>
 
 class command_queue

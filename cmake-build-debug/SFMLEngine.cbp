@@ -46,6 +46,10 @@
 				<Compiler>
 					<Add directory="/Users/neilconnatty/Library/Frameworks/SFML.framework"/>
 					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers"/>
+					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/commands"/>
+					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/scene"/>
+					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/states"/>
+					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/resources"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -69,6 +73,10 @@
 				<Compiler>
 					<Add directory="/Users/neilconnatty/Library/Frameworks/SFML.framework"/>
 					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers"/>
+					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/commands"/>
+					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/scene"/>
+					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/states"/>
+					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/resources"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -90,28 +98,49 @@
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/Game.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
-		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/aircraft.cpp">
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/application.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
-		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/command.cpp">
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/commands/command.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
-		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/command_queue.cpp">
-			<Option target="SFMLEngine"/>
-		</Unit>
-		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/entity.cpp">
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/commands/command_queue.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/player.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
-		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/scene_node.cpp">
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/scene/aircraft.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
-		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/sprite_node.cpp">
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/scene/entity.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
-		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/world.cpp">
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/scene/scene_node.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/scene/sprite_node.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/scene/world.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/game_state.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/menu_state.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/pause_state.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/state.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/state_stack.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/title_state.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/CMakeLists.txt">
