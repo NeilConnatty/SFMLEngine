@@ -6,9 +6,9 @@
 #define SFMLENGINE_WORLD_H
 
 
-#include <SFML/NonCopyable.hpp>
-#include <SFML/View.hpp>
-#include <SFML/Texture.hpp>
+#include <SFML/System/NonCopyable.hpp>
+#include <SFML/Graphics/View.hpp>
+#include <SFML/Graphics/Texture.hpp>
 
 #include <array>
 

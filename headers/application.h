@@ -9,6 +9,7 @@
 #include <SFML/System/Time.hpp>
 
 #include "states/state_stack.h"
+#include "player.h"
 
 #define PATH_TO_PROJECT_ROOT "../"
 
@@ -28,6 +29,7 @@ private:
 
 private:
     void                load_textures ();
+    void                load_fonts ();
 
 private:
     static sf::Time     TIME_PER_FRAME;
@@ -42,8 +44,6 @@ private:
     sf::Text            m_statisticsText;
     sf::Time            m_statisticsTimeUpdate;
     std::time_t         m_statisticsNumFrames;
-
-    state::context      m_context;
 
     bool                m_isPaused;
 };

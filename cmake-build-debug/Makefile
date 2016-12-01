@@ -447,6 +447,60 @@ src/states/game_state.cpp.s:
 	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/game_state.cpp.s
 .PHONY : src/states/game_state.cpp.s
 
+src/states/loading_state.o: src/states/loading_state.cpp.o
+
+.PHONY : src/states/loading_state.o
+
+# target to build an object file
+src/states/loading_state.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/loading_state.cpp.o
+.PHONY : src/states/loading_state.cpp.o
+
+src/states/loading_state.i: src/states/loading_state.cpp.i
+
+.PHONY : src/states/loading_state.i
+
+# target to preprocess a source file
+src/states/loading_state.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/loading_state.cpp.i
+.PHONY : src/states/loading_state.cpp.i
+
+src/states/loading_state.s: src/states/loading_state.cpp.s
+
+.PHONY : src/states/loading_state.s
+
+# target to generate assembly for a file
+src/states/loading_state.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/loading_state.cpp.s
+.PHONY : src/states/loading_state.cpp.s
+
+src/states/loading_task.o: src/states/loading_task.cpp.o
+
+.PHONY : src/states/loading_task.o
+
+# target to build an object file
+src/states/loading_task.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/loading_task.cpp.o
+.PHONY : src/states/loading_task.cpp.o
+
+src/states/loading_task.i: src/states/loading_task.cpp.i
+
+.PHONY : src/states/loading_task.i
+
+# target to preprocess a source file
+src/states/loading_task.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/loading_task.cpp.i
+.PHONY : src/states/loading_task.cpp.i
+
+src/states/loading_task.s: src/states/loading_task.cpp.s
+
+.PHONY : src/states/loading_task.s
+
+# target to generate assembly for a file
+src/states/loading_task.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/loading_task.cpp.s
+.PHONY : src/states/loading_task.cpp.s
+
 src/states/menu_state.o: src/states/menu_state.cpp.o
 
 .PHONY : src/states/menu_state.o
@@ -582,6 +636,33 @@ src/states/title_state.cpp.s:
 	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/title_state.cpp.s
 .PHONY : src/states/title_state.cpp.s
 
+src/utility.o: src/utility.cpp.o
+
+.PHONY : src/utility.o
+
+# target to build an object file
+src/utility.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/utility.cpp.o
+.PHONY : src/utility.cpp.o
+
+src/utility.i: src/utility.cpp.i
+
+.PHONY : src/utility.i
+
+# target to preprocess a source file
+src/utility.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/utility.cpp.i
+.PHONY : src/utility.cpp.i
+
+src/utility.s: src/utility.cpp.s
+
+.PHONY : src/utility.s
+
+# target to generate assembly for a file
+src/utility.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/utility.cpp.s
+.PHONY : src/utility.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -627,6 +708,12 @@ help:
 	@echo "... src/states/game_state.o"
 	@echo "... src/states/game_state.i"
 	@echo "... src/states/game_state.s"
+	@echo "... src/states/loading_state.o"
+	@echo "... src/states/loading_state.i"
+	@echo "... src/states/loading_state.s"
+	@echo "... src/states/loading_task.o"
+	@echo "... src/states/loading_task.i"
+	@echo "... src/states/loading_task.s"
 	@echo "... src/states/menu_state.o"
 	@echo "... src/states/menu_state.i"
 	@echo "... src/states/menu_state.s"
@@ -642,6 +729,9 @@ help:
 	@echo "... src/states/title_state.o"
 	@echo "... src/states/title_state.i"
 	@echo "... src/states/title_state.s"
+	@echo "... src/utility.o"
+	@echo "... src/utility.i"
+	@echo "... src/utility.s"
 .PHONY : help
 
 

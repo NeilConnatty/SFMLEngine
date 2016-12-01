@@ -92,6 +92,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/states/loading_state.h">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/states/loading_task.h">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/utility.h">
+			<Option target="SFMLEngine"/>
+		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/main.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
@@ -128,6 +137,12 @@
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/game_state.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/loading_state.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/loading_task.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/menu_state.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
@@ -141,6 +156,9 @@
 			<Option target="SFMLEngine"/>
 		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/title_state.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/utility.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/CMakeLists.txt">

@@ -2,8 +2,14 @@
 // Created by Neil Connatty on 2016-11-27.
 //
 
+#include <states/title_state.h>
+#include <states/menu_state.h>
+#include <states/game_state.h>
+#include <states/pause_state.h>
+#include <states/loading_state.h>
 #include "application.h"
 #include "states/state.h"
+#include "state_stack.h"
 
 sf::Time application::TIME_PER_FRAME = sf::seconds(1.f/60.f);
 
@@ -12,12 +18,20 @@ application::application () :
         m_player(),
         m_fonts(),
         m_textures(),
-        m_context(m_window, m_textures, m_fonts, m_player),
-        m_stack(m_context),
+        m_stack(state::context(m_window, m_textures, m_fonts, m_player)),
         m_statisticsText(),
         m_statisticsTimeUpdate(),
         m_statisticsNumFrames(0)
 {
+    m_window.setKeyRepeatEnabled(false);
+
+    load_textures();
+    load_fonts();
+
+    m_statisticsText.setFont(m_fonts.get(fonts::DEFAULT));
+    m_statisticsText.setPosition(5.f, 5.f);
+    m_statisticsText.setCharacterSize(10u);
+
     register_states();
     m_stack.push_state(states::TITLE);
 }
@@ -34,9 +48,9 @@ void application::run ()
         while (timeSinceLastUpdate > TIME_PER_FRAME)
         {
             timeSinceLastUpdate -= TIME_PER_FRAME;
+
             process_input();
-            if (!m_isPaused)
-                update(TIME_PER_FRAME);
+            update(TIME_PER_FRAME);
 
             if (m_stack.is_empty())
                 m_window.close();
@@ -49,10 +63,11 @@ void application::run ()
 
 void application::register_states ()
 {
-    m_stack.register_state(states::TITLE);
-    m_stack.register_state(states::MENU);
-    m_stack.register_state(states::GAME);
-    m_stack.register_state(states::PAUSE);
+    m_stack.register_state<title_state>(states::TITLE);
+    m_stack.register_state<menu_state>(states::MENU);
+    m_stack.register_state<game_state>(states::GAME);
+    m_stack.register_state<pause_state>(states::PAUSE);
+    m_stack.register_state<loading_state>(states::LOADING);
 }
 
 void application::load_textures ()
@@ -67,6 +82,12 @@ void application::load_textures ()
     m_textures.load(textures::TITLE_SCREEN, path.append("assets/textures/TitleScreen.png"));
 }
 
+void application::load_fonts ()
+{
+    std::string path(PATH_TO_PROJECT_ROOT);
+    m_fonts.load(fonts::DEFAULT, path.append("assets/Sansation.ttf"));
+}
+
 void application::process_input ()
 {
     sf::Event event;
@@ -74,17 +95,8 @@ void application::process_input ()
     {
         m_stack.handle_event(event);
 
-        switch (event.type) {
-            case sf::Event::Closed:
-                m_window.close();
-                break;
-            case sf::Event::GainedFocus:
-                m_isPaused = false;
-                break;
-            case sf::Event::LostFocus:
-                m_isPaused = true;
-                break;
-        }
+        if (event.type == sf::Event::Closed)
+            m_window.close();
     }
 }
 
@@ -101,6 +113,7 @@ void application::render ()
 
     m_window.setView(m_window.getDefaultView());
     m_window.draw(m_statisticsText);
+
     m_window.display();
 }
 

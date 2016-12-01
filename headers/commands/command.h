@@ -5,7 +5,7 @@
 #ifndef SFMLENGINE_COMMAND_H
 #define SFMLENGINE_COMMAND_H
 
-#include <SFML/Time.hpp>
+#include <SFML/System/Time.hpp>
 #include "scene/category.h"
 
 #include <functional>

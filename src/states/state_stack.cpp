@@ -50,6 +50,9 @@ void state_stack::update (sf::Time dt)
         if (!(*itr)->update(dt))
             return;
     }
+
+    if (!m_pendingList.empty())
+        apply_pending_changes();
 }
 
 void state_stack::push_state(states::ID stateID)

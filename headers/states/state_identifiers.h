@@ -12,6 +12,7 @@ namespace states
         NONE,
         TITLE,
         MENU,
+        LOADING,
         GAME,
         PAUSE
     };

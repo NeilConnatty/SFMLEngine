@@ -5,8 +5,8 @@
 #ifndef SFMLENGINE_STATE_STACK_H
 #define SFMLENGINE_STATE_STACK_H
 
-#include <SFML/NonCopyable.hpp>
-#include <SFML/Time.hpp>
+#include <SFML/System/NonCopyable.hpp>
+#include <SFML/System/Time.hpp>
 
 #include "state.h"
 #include "state_identifiers.h"

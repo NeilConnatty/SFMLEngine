@@ -16,6 +16,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/SFMLEngine.dir/src/states/title_state.cpp.o"
   "CMakeFiles/SFMLEngine.dir/src/states/menu_state.cpp.o"
   "CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o"
+  "CMakeFiles/SFMLEngine.dir/src/utility.cpp.o"
+  "CMakeFiles/SFMLEngine.dir/src/states/loading_state.cpp.o"
+  "CMakeFiles/SFMLEngine.dir/src/states/loading_task.cpp.o"
   "SFMLEngine.pdb"
   "SFMLEngine"
 )

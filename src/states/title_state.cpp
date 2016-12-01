@@ -3,6 +3,7 @@
 //
 
 #include "states/title_state.h"
+#include "utility.h"
 
 title_state::title_state (state_stack &stack, state::context cntxt)  :
         state(stack, cntxt),
@@ -11,6 +12,19 @@ title_state::title_state (state_stack &stack, state::context cntxt)  :
         m_showText(true),
         m_textEffectTime(sf::Time::Zero)
 {
+    m_text.setFont(cntxt.fonts->get(fonts::DEFAULT));
+    m_text.setString("Press any key to play");
+    utility::centre_origin(m_text);
+    m_text.setPosition(cntxt.window->getView().getSize() / 2.f);
+}
+
+void title_state::draw ()
+{
+    sf::RenderWindow& window = *get_context().window;
+    window.draw(m_backgroundSprite);
+
+    if (m_showText)
+        window.draw(m_text);
 }
 
 bool title_state::handle_event (const sf::Event &event)

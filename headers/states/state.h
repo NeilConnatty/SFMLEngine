@@ -5,8 +5,8 @@
 #ifndef SFMLENGINE_STATE_H
 #define SFMLENGINE_STATE_H
 
-#include <SFML/Time.hpp>
-#include <SFML/Event.hpp>
+#include <SFML/System/Time.hpp>
+#include <SFML/Window/Event.hpp>
 
 #include "state_identifiers.h"
 #include "resources/textures.h"

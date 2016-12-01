@@ -7,7 +7,7 @@
 
 
 #include "scene_node.h"
-#include <SFML/Sprite.hpp>
+#include <SFML/Graphics.hpp>
 
 class sprite_node : public scene_node
 {

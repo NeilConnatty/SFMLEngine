@@ -16,11 +16,14 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/scene/sprite_node.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/scene/sprite_node.cpp.o"
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/scene/world.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/scene/world.cpp.o"
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/game_state.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/states/game_state.cpp.o"
+  "/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/loading_state.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/states/loading_state.cpp.o"
+  "/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/loading_task.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/states/loading_task.cpp.o"
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/menu_state.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/states/menu_state.cpp.o"
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/pause_state.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o"
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/state.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/states/state.cpp.o"
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/state_stack.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/states/state_stack.cpp.o"
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/title_state.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/states/title_state.cpp.o"
+  "/Users/neilconnatty/ClionProjects/SFMLEngine/src/utility.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/utility.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
