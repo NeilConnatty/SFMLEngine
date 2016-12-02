@@ -37,7 +37,7 @@ void state_stack::handle_event (const sf::Event &event)
     for (auto itr = m_stack.rbegin(); itr != m_stack.rend(); ++itr)
     {
         if (!(*itr)->handle_event(event))
-            return;
+            break;
     }
 
     apply_pending_changes();
@@ -48,7 +48,7 @@ void state_stack::update (sf::Time dt)
     for (auto itr = m_stack.rbegin(); itr != m_stack.rend(); ++itr)
     {
         if (!(*itr)->update(dt))
-            return;
+            break;
     }
 
     if (!m_pendingList.empty())
