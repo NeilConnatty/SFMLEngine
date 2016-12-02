@@ -30,6 +30,8 @@ set(SOURCE_FILES
         src/states/game_state.cpp
         src/states/title_state.cpp
         src/states/menu_state.cpp
-        src/states/pause_state.cpp headers/utility.h src/utility.cpp src/states/loading_state.cpp headers/states/loading_state.h src/states/loading_task.cpp headers/states/loading_task.h)
+        src/states/pause_state.cpp
+        src/utility.cpp src/states/loading_state.cpp
+        src/states/loading_task.cpp)
 add_executable(SFMLEngine ${SOURCE_FILES})
 target_link_libraries(SFMLEngine ${SFML_LIBRARIES})

@@ -29,6 +29,8 @@ menu_state::menu_state (state_stack &stack, state::context cntxt) :
     utility::centre_origin(exitOption);
     exitOption.setPosition(playOption.getPosition() + sf::Vector2f(0.f, 30.f));
     m_options.push_back(exitOption);
+
+    update_option_text();
 }
 
 void menu_state::update_option_text ()
@@ -61,30 +63,30 @@ bool menu_state::update (sf::Time dt)
 
 bool menu_state::handle_event (const sf::Event &event)
 {
-    if (event.key.code == sf::Keyboard::Up)
-    {
-        if (m_optionIndex > 0) m_optionIndex--;
-        else m_optionIndex = m_options.size() - 1;
-
-        update_option_text();
-    }
-
-    else if (event.key.code == sf::Keyboard::Down) {
-        if (m_optionIndex < m_options.size() - 1) m_optionIndex++;
-        else m_optionIndex = 0;
-
-        update_option_text();
-    }
-
-    if (event.key.code == sf::Keyboard::Return)
-    {
-        if (m_optionIndex == PLAY)
+    if (event.type == sf::Event::KeyPressed) {
+        if (event.key.code == sf::Keyboard::Up)
         {
-            request_stack_pop();
-            request_stack_push(states::GAME);
-        } else if (m_optionIndex == EXIT)
+            if (m_optionIndex > 0) m_optionIndex--;
+            else m_optionIndex = m_options.size() - 1;
+
+            update_option_text();
+        }
+        else if (event.key.code == sf::Keyboard::Down)
         {
-            request_stack_pop();
+            if (m_optionIndex < m_options.size() - 1) m_optionIndex++;
+            else m_optionIndex = 0;
+
+            update_option_text();
+        }
+
+        if (event.key.code == sf::Keyboard::Return)
+        {
+            if (m_optionIndex == PLAY) {
+                request_stack_pop();
+                request_stack_push(states::GAME);
+            } else if (m_optionIndex == EXIT) {
+                request_stack_pop();
+            }
         }
     }
 

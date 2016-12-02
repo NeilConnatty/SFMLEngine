@@ -92,15 +92,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/states/loading_state.h">
-			<Option target="SFMLEngine"/>
-		</Unit>
-		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/states/loading_task.h">
-			<Option target="SFMLEngine"/>
-		</Unit>
-		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/utility.h">
-			<Option target="SFMLEngine"/>
-		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/main.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>

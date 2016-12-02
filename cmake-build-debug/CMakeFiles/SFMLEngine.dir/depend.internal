@@ -166,6 +166,7 @@ CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o
  ../headers/states/pause_state.h
  ../headers/states/state.h
  ../headers/states/state_identifiers.h
+ ../headers/utility.h
  /Users/neilconnatty/ClionProjects/SFMLEngine/src/states/pause_state.cpp
 CMakeFiles/SFMLEngine.dir/src/states/state.cpp.o
  ../headers/resources/fonts.h
