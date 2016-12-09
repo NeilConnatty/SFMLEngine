@@ -636,6 +636,33 @@ src/states/pause_state.cpp.s:
 	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.s
 .PHONY : src/states/pause_state.cpp.s
 
+src/states/settings_state.o: src/states/settings_state.cpp.o
+
+.PHONY : src/states/settings_state.o
+
+# target to build an object file
+src/states/settings_state.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o
+.PHONY : src/states/settings_state.cpp.o
+
+src/states/settings_state.i: src/states/settings_state.cpp.i
+
+.PHONY : src/states/settings_state.i
+
+# target to preprocess a source file
+src/states/settings_state.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.i
+.PHONY : src/states/settings_state.cpp.i
+
+src/states/settings_state.s: src/states/settings_state.cpp.s
+
+.PHONY : src/states/settings_state.s
+
+# target to generate assembly for a file
+src/states/settings_state.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.s
+.PHONY : src/states/settings_state.cpp.s
+
 src/states/state.o: src/states/state.cpp.o
 
 .PHONY : src/states/state.o
@@ -810,6 +837,9 @@ help:
 	@echo "... src/states/pause_state.o"
 	@echo "... src/states/pause_state.i"
 	@echo "... src/states/pause_state.s"
+	@echo "... src/states/settings_state.o"
+	@echo "... src/states/settings_state.i"
+	@echo "... src/states/settings_state.s"
 	@echo "... src/states/state.o"
 	@echo "... src/states/state.i"
 	@echo "... src/states/state.s"

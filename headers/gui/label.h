@@ -12,7 +12,7 @@
 
 namespace gui
 {
-    class label : public gui::component
+    class label : public component
     {
     public:
         typedef std::shared_ptr<label> ptr;
@@ -21,10 +21,12 @@ namespace gui
                             label(const std::string &text, const font_holder &fonts);
 
         virtual bool        is_selectable() const;
-        virtual void        handle_event (sf::Event& event);
+        virtual void        handle_event (const sf::Event& event);
 
-        virtual void        draw(sf::RenderTarget &target, sf::RenderStates states) const;
         void                set_text(const std::string &text);
+
+    private:
+        void                draw(sf::RenderTarget &target, sf::RenderStates states) const;
 
     private:
         sf::Text            m_text;

@@ -177,6 +177,22 @@ container.h
 ../headers/states/pause_state.h
 state.h
 ../headers/states/state.h
+gui/container.h
+../headers/states/gui/container.h
+
+../headers/states/settings_state.h
+array
+-
+gui/container.h
+-
+gui/button.h
+-
+gui/label.h
+-
+player.h
+-
+state.h
+../headers/states/state.h
 
 ../headers/states/state.h
 SFML/System/Time.hpp
@@ -219,6 +235,8 @@ states/state_stack.h
 ../headers/utility.h
 sstream
 -
+SFML/Window/Keyboard.hpp
+-
 
 /Users/neilconnatty/ClionProjects/SFMLEngine/depreciated/Game.h
 SFML/Graphics.hpp
@@ -247,6 +265,8 @@ states/pause_state.h
 -
 states/loading_state.h
 -
+states/settings_state.h
+-
 application.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/application.h
 states/state.h
@@ -263,6 +283,8 @@ commands/command_queue.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/commands/commands/command_queue.h
 
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/button.cpp
+utility.h
+-
 gui/button.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/gui/button.h
 
@@ -341,10 +363,20 @@ utility.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/states/pause_state.cpp
 utility.h
 -
+gui/button.h
+-
 iostream
+-
+gui/label.h
 -
 states/pause_state.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/states/states/pause_state.h
+
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/settings_state.cpp
+settings_state.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/settings_state.h
+utility.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/utility.h
 
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/states/state.cpp
 states/state.h

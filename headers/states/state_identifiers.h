@@ -14,7 +14,8 @@ namespace states
         MENU,
         LOADING,
         GAME,
-        PAUSE
+        PAUSE,
+        SETTINGS
     };
 }
 

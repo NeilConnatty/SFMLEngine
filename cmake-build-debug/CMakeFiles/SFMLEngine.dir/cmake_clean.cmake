@@ -22,6 +22,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SFMLEngine.dir/src/gui/container.cpp.o"
   "CMakeFiles/SFMLEngine.dir/src/gui/label.cpp.o"
   "CMakeFiles/SFMLEngine.dir/src/gui/button.cpp.o"
+  "CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o"
   "SFMLEngine.pdb"
   "SFMLEngine"
 )

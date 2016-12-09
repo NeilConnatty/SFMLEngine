@@ -17,13 +17,21 @@ menu_state::menu_state (state_stack &stack, state::context cntxt) :
     m_backgroundSprite.setTexture(texture);
 
     auto playButton = std::make_shared<gui::button>(*cntxt.fonts, *cntxt.textures);
-    playButton->setPosition(100, 250);
+    playButton->setPosition(100, 200);
     playButton->set_text("Play");
     playButton->set_callback([this]() {
         request_stack_pop();
         request_stack_push(states::GAME);
     });
     m_guiContainer.pack(playButton);
+
+    auto settingsButton = std::make_shared<gui::button>(*cntxt.fonts, *cntxt.textures);
+    settingsButton->setPosition(100, 250);
+    settingsButton->set_text("Settings");
+    settingsButton->set_callback([this]() {
+        request_stack_push(states::SETTINGS);
+    });
+    m_guiContainer.pack(settingsButton);
 
     auto exitButton = std::make_shared<gui::button>(*cntxt.fonts, *cntxt.textures);
     exitButton->setPosition(100, 300);

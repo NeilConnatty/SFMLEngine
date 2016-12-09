@@ -27,6 +27,6 @@ void label::set_text(const std::string &text)
     m_text.setString(text);
 }
 
-void label::handle_event (sf::Event &event)
+void label::handle_event (const sf::Event &event)
 {
 }

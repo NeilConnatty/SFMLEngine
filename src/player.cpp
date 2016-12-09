@@ -27,7 +27,6 @@ player::player ()
     m_keyBinding[sf::Keyboard::Right] = MOVE_RIGHT;
     m_keyBinding[sf::Keyboard::Up] = MOVE_UP;
     m_keyBinding[sf::Keyboard::Down] = MOVE_DOWN;
-    m_keyBinding[sf::Keyboard::P] = PRINT_POSITION;
 
     initialize_actions();
 
@@ -86,11 +85,6 @@ sf::Keyboard::Key player::get_assigned_key (action act) const
 void player::initialize_actions ()
 {
     const float playerSpeed = PLAYER_SPEED;
-
-    m_actionBinding[PRINT_POSITION].action = [](scene_node& node, sf::Time dt)
-    {
-        std::cout << node.getPosition().x << "," << node.getPosition().y << std::endl;
-    };
 
     m_actionBinding[MOVE_LEFT].action = derived_action<aircraft>(aircraft_mover(-playerSpeed, 0.f));
     m_actionBinding[MOVE_RIGHT].action = derived_action<aircraft>(aircraft_mover(playerSpeed, 0.f));

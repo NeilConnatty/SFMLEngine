@@ -7,6 +7,7 @@
 #include <states/game_state.h>
 #include <states/pause_state.h>
 #include <states/loading_state.h>
+#include <states/settings_state.h>
 #include "application.h"
 #include "states/state.h"
 #include "state_stack.h"
@@ -68,6 +69,7 @@ void application::register_states ()
     m_stack.register_state<game_state>(states::GAME);
     m_stack.register_state<pause_state>(states::PAUSE);
     m_stack.register_state<loading_state>(states::LOADING);
+    m_stack.register_state<settings_state>(states::SETTINGS);
 }
 
 void application::load_textures ()

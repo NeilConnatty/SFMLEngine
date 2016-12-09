@@ -94,6 +94,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/states/settings_state.h">
+			<Option target="SFMLEngine"/>
+		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/main.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
@@ -149,6 +152,9 @@
 			<Option target="SFMLEngine"/>
 		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/pause_state.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/settings_state.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/states/state.cpp">

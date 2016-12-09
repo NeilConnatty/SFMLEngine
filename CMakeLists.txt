@@ -36,6 +36,6 @@ set(SOURCE_FILES
         src/gui/component.cpp
         src/gui/container.cpp
         src/gui/label.cpp
-        src/gui/button.cpp)
+        src/gui/button.cpp src/states/settings_state.cpp headers/states/settings_state.h)
 add_executable(SFMLEngine ${SOURCE_FILES})
 target_link_libraries(SFMLEngine ${SFML_LIBRARIES})

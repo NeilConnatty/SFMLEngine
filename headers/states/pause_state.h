@@ -6,6 +6,7 @@
 #define SFMLENGINE_PAUSE_STATE_H
 
 #include "state.h"
+#include "gui/container.h"
 
 class pause_state : public state
 {
@@ -17,8 +18,7 @@ public:
     virtual bool        handle_event (const sf::Event& event);
 
 private:
-    sf::Text            m_paused_text;
-    sf::Text            m_instruction_text;
+    gui::container      m_guiContainer;
 };
 
 

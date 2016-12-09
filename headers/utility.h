@@ -6,6 +6,7 @@
 #define SFMLENGINE_UTILITY_H
 
 #include <sstream>
+#include <SFML/Window/Keyboard.hpp>
 
 namespace sf
 {
@@ -13,10 +14,12 @@ namespace sf
     class Text;
 }
 
-namespace utility {
+namespace utility
+{
     void centre_origin(sf::Sprite &sprite);
-
     void centre_origin(sf::Text &text);
+
+    std::string to_string(sf::Keyboard::Key key);
 }
 
 #endif //SFMLENGINE_UTILITY_H

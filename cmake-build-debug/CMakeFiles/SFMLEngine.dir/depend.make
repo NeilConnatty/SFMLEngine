@@ -23,8 +23,10 @@ CMakeFiles/SFMLEngine.dir/main.cpp.o: ../main.cpp
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/application.h
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/commands/command.h
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/commands/command_queue.h
+CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/gui/button.h
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/gui/component.h
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/gui/container.h
+CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/gui/label.h
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/player.h
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/resources/fonts.h
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/resources/resource_holder.h
@@ -40,6 +42,7 @@ CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/states/loading_state
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/states/loading_task.h
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/states/menu_state.h
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/states/pause_state.h
+CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/states/settings_state.h
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/states/state.h
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/states/state_identifiers.h
 CMakeFiles/SFMLEngine.dir/src/application.cpp.o: ../headers/states/state_stack.h
@@ -60,6 +63,7 @@ CMakeFiles/SFMLEngine.dir/src/gui/button.cpp.o: ../headers/gui/component.h
 CMakeFiles/SFMLEngine.dir/src/gui/button.cpp.o: ../headers/resources/fonts.h
 CMakeFiles/SFMLEngine.dir/src/gui/button.cpp.o: ../headers/resources/resource_holder.h
 CMakeFiles/SFMLEngine.dir/src/gui/button.cpp.o: ../headers/resources/textures.h
+CMakeFiles/SFMLEngine.dir/src/gui/button.cpp.o: ../headers/utility.h
 CMakeFiles/SFMLEngine.dir/src/gui/button.cpp.o: ../src/gui/button.cpp
 
 CMakeFiles/SFMLEngine.dir/src/gui/component.cpp.o: ../headers/gui/component.h
@@ -170,6 +174,10 @@ CMakeFiles/SFMLEngine.dir/src/states/menu_state.cpp.o: ../headers/states/state_i
 CMakeFiles/SFMLEngine.dir/src/states/menu_state.cpp.o: ../headers/utility.h
 CMakeFiles/SFMLEngine.dir/src/states/menu_state.cpp.o: ../src/states/menu_state.cpp
 
+CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o: ../headers/gui/button.h
+CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o: ../headers/gui/component.h
+CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o: ../headers/gui/container.h
+CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o: ../headers/gui/label.h
 CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o: ../headers/resources/fonts.h
 CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o: ../headers/resources/resource_holder.h
 CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o: ../headers/resources/textures.h
@@ -178,6 +186,23 @@ CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o: ../headers/states/state.
 CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o: ../headers/states/state_identifiers.h
 CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o: ../headers/utility.h
 CMakeFiles/SFMLEngine.dir/src/states/pause_state.cpp.o: ../src/states/pause_state.cpp
+
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/commands/command.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/commands/command_queue.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/gui/button.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/gui/component.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/gui/container.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/gui/label.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/player.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/resources/fonts.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/resources/resource_holder.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/resources/textures.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/scene/category.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/states/settings_state.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/states/state.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/states/state_identifiers.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../headers/utility.h
+CMakeFiles/SFMLEngine.dir/src/states/settings_state.cpp.o: ../src/states/settings_state.cpp
 
 CMakeFiles/SFMLEngine.dir/src/states/state.cpp.o: ../headers/resources/fonts.h
 CMakeFiles/SFMLEngine.dir/src/states/state.cpp.o: ../headers/resources/resource_holder.h

@@ -2,6 +2,7 @@
 // Created by Neil Connatty on 2016-12-08.
 //
 
+#include <utility.h>
 #include "gui/button.h"
 
 using namespace gui;
@@ -16,6 +17,7 @@ button::button (font_holder &fonts, texture_holder &textures) :
         m_callback()
 {
     m_sprite.setTexture(m_normalTexture);
+    utility::centre_origin(m_text);
 
     sf::FloatRect bounds = m_sprite.getLocalBounds();
     m_text.setPosition(bounds.width / 2.f, bounds.height / 2.f);

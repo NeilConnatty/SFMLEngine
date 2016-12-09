@@ -21,7 +21,7 @@ public:
         MOVE_RIGHT,
         MOVE_UP,
         MOVE_DOWN,
-        PRINT_POSITION
+        ACTION_COUNT
     };
 
     void                assign_key (action act, sf::Keyboard::Key key);
