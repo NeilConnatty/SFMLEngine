@@ -20,7 +20,10 @@ namespace textures
         EAGLE,
         RAPTOR,
         DESERT,
-        TITLE_SCREEN
+        TITLE_SCREEN,
+        BUTTON_NORMAL,
+        BUTTON_PRESSED,
+        BUTTON_SELECTED
     };
 }
 

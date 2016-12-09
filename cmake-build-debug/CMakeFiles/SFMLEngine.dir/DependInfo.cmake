@@ -5,10 +5,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/neilconnatty/ClionProjects/SFMLEngine/main.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/main.cpp.o"
-  "/Users/neilconnatty/ClionProjects/SFMLEngine/src/Game.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/Game.cpp.o"
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/application.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/application.cpp.o"
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/commands/command.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/commands/command.cpp.o"
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/commands/command_queue.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/commands/command_queue.cpp.o"
+  "/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/button.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/gui/button.cpp.o"
+  "/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/component.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/gui/component.cpp.o"
+  "/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/container.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/gui/container.cpp.o"
+  "/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/label.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/gui/label.cpp.o"
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/player.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/player.cpp.o"
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/scene/aircraft.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/scene/aircraft.cpp.o"
   "/Users/neilconnatty/ClionProjects/SFMLEngine/src/scene/entity.cpp" "/Users/neilconnatty/ClionProjects/SFMLEngine/cmake-build-debug/CMakeFiles/SFMLEngine.dir/src/scene/entity.cpp.o"
@@ -35,6 +38,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../headers/scene"
   "../headers/states"
   "../headers/resources"
+  "../headers/gui"
   )
 
 # Targets to which this target links.

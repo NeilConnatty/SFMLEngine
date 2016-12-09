@@ -8,6 +8,7 @@
 
 #include <vector>
 #include "state.h"
+#include "container.h"
 
 class menu_state : public state
 {
@@ -19,19 +20,9 @@ public:
     virtual bool                handle_event (const sf::Event& event);
 
 private:
-    void                        update_option_text ();
-
-private:
-    enum options
-    {
-        PLAY,
-        EXIT
-    };
-
-    std::vector<sf::Text>       m_options;
-    std::size_t                 m_optionIndex;
 
     sf::Sprite                  m_backgroundSprite;
+    gui::container              m_guiContainer;
 };
 
 

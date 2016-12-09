@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -stdlib=libc++ -g -isysroot /Applications/Xcode.app/Cont
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -F/Users/neilconnatty/Library/Frameworks -I/Users/neilconnatty/ClionProjects/SFMLEngine/headers -I/Users/neilconnatty/ClionProjects/SFMLEngine/headers/commands -I/Users/neilconnatty/ClionProjects/SFMLEngine/headers/scene -I/Users/neilconnatty/ClionProjects/SFMLEngine/headers/states -I/Users/neilconnatty/ClionProjects/SFMLEngine/headers/resources 
+CXX_INCLUDES = -F/Users/neilconnatty/Library/Frameworks -I/Users/neilconnatty/ClionProjects/SFMLEngine/headers -I/Users/neilconnatty/ClionProjects/SFMLEngine/headers/commands -I/Users/neilconnatty/ClionProjects/SFMLEngine/headers/scene -I/Users/neilconnatty/ClionProjects/SFMLEngine/headers/states -I/Users/neilconnatty/ClionProjects/SFMLEngine/headers/resources -I/Users/neilconnatty/ClionProjects/SFMLEngine/headers/gui 
 

@@ -80,6 +80,12 @@ void application::load_textures ()
     m_textures.load(textures::DESERT, path.append("assets/textures/Desert.png"));
     path.assign(PATH_TO_PROJECT_ROOT);
     m_textures.load(textures::TITLE_SCREEN, path.append("assets/textures/TitleScreen.png"));
+    path.assign(PATH_TO_PROJECT_ROOT);
+    m_textures.load(textures::BUTTON_NORMAL, path.append("assets/textures/ButtonNormal.png"));
+    path.assign(PATH_TO_PROJECT_ROOT);
+    m_textures.load(textures::BUTTON_PRESSED, path.append("assets/textures/ButtonPressed.png"));
+    path.assign(PATH_TO_PROJECT_ROOT);
+    m_textures.load(textures::BUTTON_SELECTED, path.append("assets/textures/ButtonSelected.png"));
 }
 
 void application::load_fonts ()

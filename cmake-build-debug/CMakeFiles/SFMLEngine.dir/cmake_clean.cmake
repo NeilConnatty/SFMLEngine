@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/SFMLEngine.dir/main.cpp.o"
-  "CMakeFiles/SFMLEngine.dir/src/Game.cpp.o"
   "CMakeFiles/SFMLEngine.dir/src/scene/entity.cpp.o"
   "CMakeFiles/SFMLEngine.dir/src/scene/aircraft.cpp.o"
   "CMakeFiles/SFMLEngine.dir/src/scene/scene_node.cpp.o"
@@ -19,6 +18,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/SFMLEngine.dir/src/utility.cpp.o"
   "CMakeFiles/SFMLEngine.dir/src/states/loading_state.cpp.o"
   "CMakeFiles/SFMLEngine.dir/src/states/loading_task.cpp.o"
+  "CMakeFiles/SFMLEngine.dir/src/gui/component.cpp.o"
+  "CMakeFiles/SFMLEngine.dir/src/gui/container.cpp.o"
+  "CMakeFiles/SFMLEngine.dir/src/gui/label.cpp.o"
+  "CMakeFiles/SFMLEngine.dir/src/gui/button.cpp.o"
   "SFMLEngine.pdb"
   "SFMLEngine"
 )

@@ -150,33 +150,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/Game.o: src/Game.cpp.o
-
-.PHONY : src/Game.o
-
-# target to build an object file
-src/Game.cpp.o:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/Game.cpp.o
-.PHONY : src/Game.cpp.o
-
-src/Game.i: src/Game.cpp.i
-
-.PHONY : src/Game.i
-
-# target to preprocess a source file
-src/Game.cpp.i:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/Game.cpp.i
-.PHONY : src/Game.cpp.i
-
-src/Game.s: src/Game.cpp.s
-
-.PHONY : src/Game.s
-
-# target to generate assembly for a file
-src/Game.cpp.s:
-	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/Game.cpp.s
-.PHONY : src/Game.cpp.s
-
 src/application.o: src/application.cpp.o
 
 .PHONY : src/application.o
@@ -257,6 +230,114 @@ src/commands/command_queue.s: src/commands/command_queue.cpp.s
 src/commands/command_queue.cpp.s:
 	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/commands/command_queue.cpp.s
 .PHONY : src/commands/command_queue.cpp.s
+
+src/gui/button.o: src/gui/button.cpp.o
+
+.PHONY : src/gui/button.o
+
+# target to build an object file
+src/gui/button.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/gui/button.cpp.o
+.PHONY : src/gui/button.cpp.o
+
+src/gui/button.i: src/gui/button.cpp.i
+
+.PHONY : src/gui/button.i
+
+# target to preprocess a source file
+src/gui/button.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/gui/button.cpp.i
+.PHONY : src/gui/button.cpp.i
+
+src/gui/button.s: src/gui/button.cpp.s
+
+.PHONY : src/gui/button.s
+
+# target to generate assembly for a file
+src/gui/button.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/gui/button.cpp.s
+.PHONY : src/gui/button.cpp.s
+
+src/gui/component.o: src/gui/component.cpp.o
+
+.PHONY : src/gui/component.o
+
+# target to build an object file
+src/gui/component.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/gui/component.cpp.o
+.PHONY : src/gui/component.cpp.o
+
+src/gui/component.i: src/gui/component.cpp.i
+
+.PHONY : src/gui/component.i
+
+# target to preprocess a source file
+src/gui/component.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/gui/component.cpp.i
+.PHONY : src/gui/component.cpp.i
+
+src/gui/component.s: src/gui/component.cpp.s
+
+.PHONY : src/gui/component.s
+
+# target to generate assembly for a file
+src/gui/component.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/gui/component.cpp.s
+.PHONY : src/gui/component.cpp.s
+
+src/gui/container.o: src/gui/container.cpp.o
+
+.PHONY : src/gui/container.o
+
+# target to build an object file
+src/gui/container.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/gui/container.cpp.o
+.PHONY : src/gui/container.cpp.o
+
+src/gui/container.i: src/gui/container.cpp.i
+
+.PHONY : src/gui/container.i
+
+# target to preprocess a source file
+src/gui/container.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/gui/container.cpp.i
+.PHONY : src/gui/container.cpp.i
+
+src/gui/container.s: src/gui/container.cpp.s
+
+.PHONY : src/gui/container.s
+
+# target to generate assembly for a file
+src/gui/container.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/gui/container.cpp.s
+.PHONY : src/gui/container.cpp.s
+
+src/gui/label.o: src/gui/label.cpp.o
+
+.PHONY : src/gui/label.o
+
+# target to build an object file
+src/gui/label.cpp.o:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/gui/label.cpp.o
+.PHONY : src/gui/label.cpp.o
+
+src/gui/label.i: src/gui/label.cpp.i
+
+.PHONY : src/gui/label.i
+
+# target to preprocess a source file
+src/gui/label.cpp.i:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/gui/label.cpp.i
+.PHONY : src/gui/label.cpp.i
+
+src/gui/label.s: src/gui/label.cpp.s
+
+.PHONY : src/gui/label.s
+
+# target to generate assembly for a file
+src/gui/label.cpp.s:
+	$(MAKE) -f CMakeFiles/SFMLEngine.dir/build.make CMakeFiles/SFMLEngine.dir/src/gui/label.cpp.s
+.PHONY : src/gui/label.cpp.s
 
 src/player.o: src/player.cpp.o
 
@@ -675,9 +756,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/Game.o"
-	@echo "... src/Game.i"
-	@echo "... src/Game.s"
 	@echo "... src/application.o"
 	@echo "... src/application.i"
 	@echo "... src/application.s"
@@ -687,6 +765,18 @@ help:
 	@echo "... src/commands/command_queue.o"
 	@echo "... src/commands/command_queue.i"
 	@echo "... src/commands/command_queue.s"
+	@echo "... src/gui/button.o"
+	@echo "... src/gui/button.i"
+	@echo "... src/gui/button.s"
+	@echo "... src/gui/component.o"
+	@echo "... src/gui/component.i"
+	@echo "... src/gui/component.s"
+	@echo "... src/gui/container.o"
+	@echo "... src/gui/container.i"
+	@echo "... src/gui/container.s"
+	@echo "... src/gui/label.o"
+	@echo "... src/gui/label.i"
+	@echo "... src/gui/label.s"
 	@echo "... src/player.o"
 	@echo "... src/player.i"
 	@echo "... src/player.s"

@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../headers/Game.h
-SFML/Graphics.hpp
--
-scene/world.h
-../headers/scene/world.h
-player.h
-../headers/player.h
-
 ../headers/application.h
 SFML/Window/Event.hpp
 -
@@ -39,6 +31,36 @@ commands/command.h
 -
 queue
 -
+
+../headers/gui/button.h
+resources/fonts.h
+-
+resources/textures.h
+-
+component.h
+../headers/gui/component.h
+
+../headers/gui/component.h
+SFML/Graphics.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+SFML/Window/Event.hpp
+-
+
+../headers/gui/container.h
+vector
+-
+component.h
+../headers/gui/component.h
+
+../headers/gui/label.h
+string
+-
+resources/fonts.h
+-
+component.h
+../headers/gui/component.h
 
 ../headers/player.h
 commands/command_queue.h
@@ -149,6 +171,8 @@ vector
 -
 state.h
 ../headers/states/state.h
+container.h
+../headers/states/container.h
 
 ../headers/states/pause_state.h
 state.h
@@ -196,17 +220,21 @@ states/state_stack.h
 sstream
 -
 
-/Users/neilconnatty/ClionProjects/SFMLEngine/main.cpp
-Game.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/depreciated/Game.h
+SFML/Graphics.hpp
 -
+scene/world.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/depreciated/scene/world.h
+player.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/depreciated/player.h
+
+/Users/neilconnatty/ClionProjects/SFMLEngine/main.cpp
+depreciated/Game.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/depreciated/Game.h
 iostream
 -
 application.h
 -
-
-/Users/neilconnatty/ClionProjects/SFMLEngine/src/Game.cpp
-Game.h
-/Users/neilconnatty/ClionProjects/SFMLEngine/src/Game.h
 
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/application.cpp
 states/title_state.h
@@ -233,6 +261,22 @@ commands/command.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/commands/command_queue.cpp
 commands/command_queue.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/commands/commands/command_queue.h
+
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/button.cpp
+gui/button.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/gui/button.h
+
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/component.cpp
+gui/component.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/gui/component.h
+
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/container.cpp
+gui/container.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/gui/container.h
+
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/label.cpp
+gui/label.h
+/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/gui/label.h
 
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/player.cpp
 scene/aircraft.h
@@ -287,6 +331,8 @@ SFML/System/Lock.hpp
 -
 
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/states/menu_state.cpp
+gui/button.h
+-
 states/menu_state.h
 /Users/neilconnatty/ClionProjects/SFMLEngine/src/states/states/menu_state.h
 utility.h

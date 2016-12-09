@@ -12,10 +12,10 @@ include_directories(headers/commands)
 include_directories(headers/scene)
 include_directories(headers/states)
 include_directories(headers/resources)
+include_directories(headers/gui)
 
 set(SOURCE_FILES
         main.cpp
-        src/Game.cpp
         src/scene/entity.cpp
         src/scene/aircraft.cpp
         src/scene/scene_node.cpp
@@ -32,6 +32,10 @@ set(SOURCE_FILES
         src/states/menu_state.cpp
         src/states/pause_state.cpp
         src/utility.cpp src/states/loading_state.cpp
-        src/states/loading_task.cpp)
+        src/states/loading_task.cpp
+        src/gui/component.cpp
+        src/gui/container.cpp
+        src/gui/label.cpp
+        src/gui/button.cpp)
 add_executable(SFMLEngine ${SOURCE_FILES})
 target_link_libraries(SFMLEngine ${SFML_LIBRARIES})

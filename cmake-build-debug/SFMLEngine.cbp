@@ -50,6 +50,7 @@
 					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/scene"/>
 					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/states"/>
 					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/resources"/>
+					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/gui"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -77,6 +78,7 @@
 					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/scene"/>
 					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/states"/>
 					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/resources"/>
+					<Add directory="/Users/neilconnatty/ClionProjects/SFMLEngine/headers/gui"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -95,9 +97,6 @@
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/main.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
-		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/Game.cpp">
-			<Option target="SFMLEngine"/>
-		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/application.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
@@ -105,6 +104,18 @@
 			<Option target="SFMLEngine"/>
 		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/commands/command_queue.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/button.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/component.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/container.cpp">
+			<Option target="SFMLEngine"/>
+		</Unit>
+		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/gui/label.cpp">
 			<Option target="SFMLEngine"/>
 		</Unit>
 		<Unit filename="/Users/neilconnatty/ClionProjects/SFMLEngine/src/player.cpp">
